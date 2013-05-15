@@ -1,112 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Daniel Quan</title>
-	<meta name="author" content="Daniel Quan">
-
-	
-	<meta name="description" content="May 15th, 2013 Migration From Tumblr I will slowly be making a move from tumblr to octopress. Octopress is a framework built on Jekyll, a static &hellip;">
-	
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="/atom.xml" rel="alternate" title="Daniel Quan" type="application/atom+xml">
-	
-	<link rel="canonical" href="http://djquan.github.io/">
-	<link href="/favicon.png" rel="shortcut icon">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-</head>
-
-
-<body>
-	<div class="container">
-		<div class="left-col">
-			<div class="intrude-less">
-			<header id="header" class="inner"><div class="profilepic">	
-	<script src="/javascripts/md5.js"></script>
-	<script type="text/javascript">
-		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("djquan@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
-	</script>
-</div>
-<hgroup>
-  <h1><a href="/">Daniel Quan</a></h1>
-  
-    <h2>Aspiring Web Developer</h2>
-  
-</hgroup>
-
-<nav id="main-nav"><ul class="main-navigation">
-  <li><a href="/about.html">About</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/resources.html">Resources</a></li>
-</ul>
-</nav>
-<nav id="sub-nav">
-	<div class="social">
-		
-		
-		
-		<a class="twitter" href="http://twitter.com/dan_quan" title="Twitter">Twitter</a>
-		
-		
-		<a class="github" href="https://github.com/djquan" title="GitHub">GitHub</a>
-		
-		
-		
-		
-		
-		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
-		
-	</div>
-</nav>
-</header>				
-			</div>
-		</div>	
-		<div class="mid-col">
-			
-				
-			
-			<div class="mid-col-container">
-				<div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
+  <title><![CDATA[Daniel Quan]]></title>
+  <link href="http://djquan.github.io/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-05-15T17:57:20-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-05-15T15:31:00-04:00" data-updated="true" itemprop="datePublished">May 15<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/15/migration-from-tumblr/" itemprop="url">Migration From Tumblr</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>I will slowly be making a move from tumblr to octopress.</p>
+  <entry>
+    <title type="html"><![CDATA[Migration from Tumblr]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/15/migration-from-tumblr/"/>
+    <updated>2013-05-15T15:31:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/15/migration-from-tumblr</id>
+    <content type="html"><![CDATA[<p>I will slowly be making a move from tumblr to octopress.</p>
 
 <p>Octopress is a framework built on Jekyll, a static blog generator.</p>
 
@@ -115,37 +27,15 @@ Moreover, octopress (and jekyll) allow me a greater freedom in how I write my po
 
 <p>I have been trying for the past few hours on ways of importing my older posts from tumblr.  I&rsquo;ve tried a variety of methods, including <a href="http://jekyllrb.com/docs/migrations/">jekyll-import</a>
 but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-05-14T15:55:00-04:00" data-updated="true" itemprop="datePublished">May 14<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/14/tmux/" itemprop="url">Tmux</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><strong>Intro to tmux</strong></p>
+  <entry>
+    <title type="html"><![CDATA[tmux]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/14/tmux/"/>
+    <updated>2013-05-14T15:55:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/14/tmux</id>
+    <content type="html"><![CDATA[<p><strong>Intro to tmux</strong></p>
 
 
 <p>tmux is a terminal multiplexer. &nbsp;At it&#8217;s most basic, it allows you create windows and panes inside a tmux session. &nbsp;Each window and pane is a separate instance of a terminal. &nbsp;</p>
@@ -242,37 +132,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Other people&#8217;s dotfiles. &nbsp;I wouldn&#8217;t recommend <a href="https://github.com/djquan/dotfiles">mine</a>; Josh Clayton is a proficient user and has all <a href="https://github.com/joshuaclayton/dotfiles">his dotfiles up.<br /></a></li>
 </ul>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-05-14T12:57:00-04:00" data-updated="true" itemprop="datePublished">May 14<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/14/backbone-round-1/" itemprop="url">Backbone, Round 1</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>There are a lot of javascript frameworks out there. &nbsp;<a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">This article</a> and <a href="http://todomvc.com/">this site</a> helped to clear up some of my confusion.&nbsp;</p>
+  <entry>
+    <title type="html"><![CDATA[Backbone, round 1]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/14/backbone-round-1/"/>
+    <updated>2013-05-14T12:57:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/14/backbone-round-1</id>
+    <content type="html"><![CDATA[<p>There are a lot of javascript frameworks out there. &nbsp;<a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">This article</a> and <a href="http://todomvc.com/">this site</a> helped to clear up some of my confusion.&nbsp;</p>
 
 
 <p>I just had my first introduction to these frameworks/libraries with Code School&#8217;s Anatomy of Backbone.js, Part I. &nbsp;<span>Like most of their courses, it was a good </span><strong>introduction</strong><span> to the material that convinced me that I need to learn a lot more about it.</span></p>
@@ -298,37 +166,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 
 <p></p>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-05-11T16:03:00-04:00" data-updated="true" itemprop="datePublished">May 11<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/11/pull-request/" itemprop="url">Pull Request</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Obligatory first pull request post! For those that don&#8217;t know, a pull request is a way of contributing back to the open source community. &nbsp;You request that the creator/maintainer&nbsp;of a particular piece of software incorporate your code into the overall code to add a feature or fix a bug. &nbsp;</p>
+  <entry>
+    <title type="html"><![CDATA[Pull Request]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/11/pull-request/"/>
+    <updated>2013-05-11T16:03:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/11/pull-request</id>
+    <content type="html"><![CDATA[<p>Obligatory first pull request post! For those that don&#8217;t know, a pull request is a way of contributing back to the open source community. &nbsp;You request that the creator/maintainer&nbsp;of a particular piece of software incorporate your code into the overall code to add a feature or fix a bug. &nbsp;</p>
 
 
 <p>My first pull request was to <a href="https://github.com/lra/mackup">mackup</a>, a program that lets you keep all your dotfiles (specific configuration files for a variety of apps) in sync through Dropbox. &nbsp;This is an entirely easy thing to do without this software through creating symbolic links, but mackup automates this process, cutting down a lot of time and commands. &nbsp;My contribution was adding support for tmuxinator and teamocil dotfiles. &nbsp;It was only about five lines of additional code, but it still feels good to add features onto a piece of software I use regularly. &nbsp; &nbsp;&nbsp;</p>
@@ -351,37 +197,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Ruby Rogues - Episode 104, Book Club discussing The Rails View&nbsp;</li>
 </ul>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-05-07T16:08:00-04:00" data-updated="true" itemprop="datePublished">May 7<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/07/tapas/" itemprop="url">Tapas</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><p>Ruby Tapas are short screencasts that cover small topics of the Ruby language.   Access to them is $9/month, and the creator (Avdi Grimm) releases three per week.   Go to the site and listen to any number of the free ones he provides and you will realize that it is a great bargain.  I&#8217;m currently working my way through them all and learning a lot. </p>
+  <entry>
+    <title type="html"><![CDATA[Tapas]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/07/tapas/"/>
+    <updated>2013-05-07T16:08:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/07/tapas</id>
+    <content type="html"><![CDATA[<p><p>Ruby Tapas are short screencasts that cover small topics of the Ruby language.   Access to them is $9/month, and the creator (Avdi Grimm) releases three per week.   Go to the site and listen to any number of the free ones he provides and you will realize that it is a great bargain.  I&#8217;m currently working my way through them all and learning a lot. </p>
 <p><a href="http://testfirst.org/learn_ruby">Test First Ruby</a> is a pretty interesting way to practice programming.  It&#8217;s a lot like RubyKoans in the sense that it relies on TDD.  There are many chapters with different objects.  For example, one chapter has you create a pig-latin converter.  Another tasks you to create a Reverse Polish Notion calculator.   Some are a lot simpler, like extending the Array class to add a function (of course, whether doing so is a smart idea is another thing). </p>
 <p>A goal for the coming week is to check out some front-end resources.  I love playing around and programming in Ruby, but it&#8217;s not the only thing I need to learn well. </p>
 <p>Log for 5/2 - 5/7</p>
@@ -389,37 +213,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Completed Test First Ruby</li>
 </ul></p>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-05-01T16:14:00-04:00" data-updated="true" itemprop="datePublished">May 1<span>st</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/01/efficiency/" itemprop="url">Efficiency</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><p><span>A major lesson I&#8217;ve learned from experimenting with vim is that efficiency does matter, no matter the editor.  The tools a person chooses are important, and it&#8217;s important to be efficient and precise with them.  </span></p>
+  <entry>
+    <title type="html"><![CDATA[Efficiency]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/01/efficiency/"/>
+    <updated>2013-05-01T16:14:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/01/efficiency</id>
+    <content type="html"><![CDATA[<p><p><span>A major lesson I&#8217;ve learned from experimenting with vim is that efficiency does matter, no matter the editor.  The tools a person chooses are important, and it&#8217;s important to be efficient and precise with them.  </span></p>
 <p>In vimadventures, they have these levels where you have to accomplish certain editing and navigating texts within a certain number of keystrokes. The goal is to make you think about it now, so that it can be engrained later.  </p>
 <p>I&#8217;m still up in the air about making it my primary editor, but it has changed the way I approach Sublime Text.  I&#8217;m constantly asking, is there a way I can do <em>x </em>without reaching for the mouse and without pressing too many keys.   To rephrase an earlier statement, the tools a person chooses are important, but it&#8217;s more important to be efficient and precise with them than choosing the perfect one. </p>
 <p>This <a href="https://www.hackerschool.com/manual">manual</a> by hacker school is pretty awesome.  The parts on social rules and pair programming are worth a gander.</p>
@@ -430,37 +232,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Spent a lot of time trying to get an efficient workflow&#8230;went back and forth between vim and ST2 a lot.  I&#8217;m working on posting <a href="https://trello.com/board/my-setup/5181b0017dca609775002b0d">my current setup </a>with both on trello.  </li>
 </ul></p>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-04-29T16:16:00-04:00" data-updated="true" itemprop="datePublished">Apr 29<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/04/29/thoughtbot-intermediate/" itemprop="url">Thoughtbot - Intermediate</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><p><span>I finished Thoughtbot&#8217;s Intermediate Ruby on Rails Workshop.  I, without a doubt, learned a lot from it.  I</span><span>t works out to being $100 with a Learn Prime subscription.   For that price, you get the material (approximately four hours of video), and constant access to the instructor and office hours every week.  I&#8217;d recommend this workshop for this access more than the content (which was quite good too).   I&#8217;m going to be their taking online Test Driven Rails Workshop in May. </span></p>
+  <entry>
+    <title type="html"><![CDATA[Thoughtbot - Intermediate]]></title>
+    <link href="http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate/"/>
+    <updated>2013-04-29T16:16:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate</id>
+    <content type="html"><![CDATA[<p><p><span>I finished Thoughtbot&#8217;s Intermediate Ruby on Rails Workshop.  I, without a doubt, learned a lot from it.  I</span><span>t works out to being $100 with a Learn Prime subscription.   For that price, you get the material (approximately four hours of video), and constant access to the instructor and office hours every week.  I&#8217;d recommend this workshop for this access more than the content (which was quite good too).   I&#8217;m going to be their taking online Test Driven Rails Workshop in May. </span></p>
 <p>The Well Grounded Rubyist is an amazing book.  I have a much better understanding of Ruby after reading it.   The first half of the book really prepares you for the second, and it goes from good to amazing in Chapter 10: Enumerables.   It is a long book, but I highly recommend taking a look as it greatly enhanced my comprehension (and love) of Ruby.  </p>
 <ul><li><span>Learning more about regular expressions and MatchData has definitely made them less scary(and kind of exciting!).  </span></li>
 <li><span>Learning more about the enumerable module gives me a better picture of when to use each method.   Also, knowing that anything can be made to be enumerable-like by adding one method (and an include) is exciting. </span></li>
@@ -480,85 +260,16 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Started with Project Euler</li>
 </ul></p>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
+]]></content>
+  </entry>
   
-
-
-<time datetime="2013-04-28T16:17:00-04:00" data-updated="true" itemprop="datePublished">Apr 28<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/04/28/older-posts/" itemprop="url">Older Posts..</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
-
-		
-		
-	</div>
-
-</article>
-
-</div>
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
-			</div>
-			<footer id="footer" class="inner"><p>
-  Copyright &copy; 2013 - Daniel Quan -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
-			<script src="/javascripts/slash.js"></script>
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
-
-
-<script type="text/javascript">
-      var disqus_shortname = 'danielquan';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-		</div>
-	</div>
-</body>
-</html>
+  <entry>
+    <title type="html"><![CDATA[Older posts..]]></title>
+    <link href="http://djquan.github.io/blog/2013/04/28/older-posts/"/>
+    <updated>2013-04-28T16:17:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/04/28/older-posts</id>
+    <content type="html"><![CDATA[<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
+]]></content>
+  </entry>
+  
+</feed>
