@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-05-15T20:57:05-04:00</updated>
+  <updated>2013-05-16T13:59:19-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/16/octopress/"/>
+    <updated>2013-05-16T13:33:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/16/octopress</id>
+    <content type="html"><![CDATA[<p>Well, the switch to Octopress seems pretty complete.  Here are just a few of my thoughts on it.</p>
+
+<p>Give octopress a try. It&rsquo;s easy to set up.  It&rsquo;s easy to post content.</p>
+
+<ul>
+<li>Octopress makes it incredibly easy to write and publish from the command line.</li>
+<li>Everything about an octopress blog will be stored locally.</li>
+<li>This gives freedom to switch publishing platforms or web hosts and a local backup of posts(with version control!).</li>
+<li>Octopress is made for coders.  Inserting code snippets is incredibly easy.  There are also a large number of plugins to extend functionality.</li>
+</ul>
+
+
+<p>I will miss some aspects of tumblr.</p>
+
+<ul>
+<li>Tumblr is an incredible way to make connections and really is social blogging at its best.</li>
+<li>Tumblr has apps to make mobile publishing simple.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Migration from Tumblr]]></title>
