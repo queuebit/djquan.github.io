@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: DAS | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/das/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-05-17T18:14:41-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[progress]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/16/progress/"/>
+    <updated>2013-05-16T14:14:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/16/progress</id>
+    <content type="html"><![CDATA[<p>One of the great things about the ruby (and software community in general) is that there are a lot of resources available to learn from.</p>
+
+<p><a href="http://destroyallsoftware.com">Destroy All Software</a> has just made the screencasts available for purchase by season. They weren&rsquo;t available for the past few months while Gary Bernhardt switched pricing models.  I&rsquo;m working through the first season right now and am learning a lot.  It&rsquo;s almost worth it alone to see how fast and efficient he is with vim.</p>
+
+<p>Vim tip: Relative numbers is a <a href="http://forum.thoughtbot.com/t/give-set-relativenumber-a-try/22">winner</a>.</p>
+
+<p><code>vim
+set relativenumber
+</code></p>
+
+<p>I like using the <a href="https://github.com/jeffkreeftmeijer/vim-numbertoggle">numbertoggle</a> plugin. It automatically switches to absolute numbers when I switch to insert mode, and it switches back to relative numbers when I leave.</p>
+]]></content>
+  </entry>
+  
+</feed>
