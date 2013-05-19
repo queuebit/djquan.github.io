@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-05-19T11:41:41-04:00</updated>
+  <updated>2013-05-19T11:43:55-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -311,15 +311,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Older posts..]]></title>
-    <link href="http://djquan.github.io/blog/2013/04/28/older-posts/"/>
-    <updated>2013-04-28T16:17:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/04/28/older-posts</id>
-    <content type="html"><![CDATA[<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[App Academy]]></title>
     <link href="http://djquan.github.io/blog/2013/04/21/app-academy/"/>
     <updated>2013-04-21T11:34:00-04:00</updated>
@@ -370,6 +361,15 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Agile Development with Heroku webinar</li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Older posts..]]></title>
+    <link href="http://djquan.github.io/blog/2013/04/12/older-posts/"/>
+    <updated>2013-04-12T16:17:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/04/12/older-posts</id>
+    <content type="html"><![CDATA[<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
 ]]></content>
   </entry>
   
