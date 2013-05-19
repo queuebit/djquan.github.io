@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: regex | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/regex/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-05-19T17:43:16-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Law and Development]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/19/progress/"/>
+    <updated>2013-05-19T18:17:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/19/progress</id>
+    <content type="html"><![CDATA[<p>The Ruby Rogues episode on <a href="http://rubyrogues.com/105-rr-regular-expressions-with-nell-shamrell/">regular expressions</a> is pretty awesome. Regular expressions are a way to express patterns in a programming language.  Regular expressions are powerful, but can be very intimidating. <a href="http://rubular.com">Rubular</a> is a nice tool to play around with them, and the chapter on regular expressions in <em>The Well Grounded Rubyist</em> provides a great explanation.</p>
+
+<p>I passed the CA bar exam! That being said, landing a job as a web developer is still my number one goal.  Being a lawyer will be just another skill that I bring to the table.  This means that I&rsquo;ll need to find resources to learn about laws and regulations that affect start-ups. Being a web developer that can also handle routine and simple legal issues will help me stand out.  Web Developer / Counsel would be a nice job title.</p>
+
+<p><a href="http://www.lawline.com/">Lawline</a> might be a good resource to learn more. I tried a course on them about negotating SaaS deals which was pretty informative. A general theme of the video was to be explicit about every provision, including confidentiality and ownership. The instructor also stated that the majority of contracts created by tech vendors are pretty horrible because companies tend to reuse old contract and they aren&rsquo;t clear on the intent of the agreement.</p>
+
+<p>Heads up, Code School will be <a href="http://www.codeschool.com/free-weekend?fb_action_ids=10201128707883052&amp;fb_action_types=og.likes&amp;fb_ref=.UZaSvvvXBpk.send&amp;fb_source=aggregation&amp;fb_aggregation_id=288381481237582">free</a> May 25th to May 26th. Code School is a fantastic <em>starting off point</em> for many topics.  Their courses are always well made and designed.</p>
+
+<p>Log for 5/17-5/19</p>
+
+<ul>
+<li>Lawline.com &ndash; The Art and Science of Negotiating SaaS(Software as a service) Deals</li>
+<li><a href="http://www.youtube.com/watch?v=T8J0j2xJFgQ">Confident Code</a> talk by Avdi Grimm</li>
+<li>Ruby Rogues &ndash; Episode 105, Regular Expressions with Nell Shamrell</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
