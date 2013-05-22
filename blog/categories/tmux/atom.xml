@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tmux | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/tmux/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-05-22T15:29:52-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[tmux]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/14/tmux/"/>
+    <updated>2013-05-14T15:55:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/14/tmux</id>
+    <content type="html"><![CDATA[<p><strong>Intro to tmux</strong></p>
+
+
+<p>tmux is a terminal multiplexer. &nbsp;At it's most basic, it allows you create windows and panes inside a tmux session. &nbsp;Each window and pane is a separate instance of a terminal. &nbsp;</p>
+
+
+<p>I'll try to explain why tmux works <em>for me</em>, and I'll finish with links on how to set it up. &nbsp;</p>
+
+
+<p>This is not aimed to be a guide on setting up tmux, or how to use tmux. &nbsp;It is just an explanation of why it has become essential<em> to me</em>, and why it is worth a try. &nbsp;There are alternatives; iterm2 has it's own way of handling panes; there is also screen. &nbsp;I haven't tried either, and I'm not implying that tmux is better than either. &nbsp;</p>
+
+
+<p><span>Also, I am still a novice; I have a tremendous amount to learn about improving my workflow.</span></p>
+
+
+<p><a href="https://dl.dropboxusercontent.com/u/6565481/tmux.png"><img alt="image" src="http://media.tumblr.com/7ca4b1bdf4c5fb7d5ab1d5dfe10cad9a/tumblr_inline_mmt29dEyHR1qz4rgp.png" /></a></p>
+
+
+<p><strong>Panes, Panes, Panes.</strong></p>
+
+
+<p>Since I began to code through test-driven-development, I almost always code so that I can see both my test file and the code that it is testing. &nbsp;In sublime, this involved using a two column layout. &nbsp;In vim, I accomplished this through split panes. &nbsp;It is important to see the tests and the code at the same time. &nbsp;</p>
+
+
+<p>tmux lets me keep a command prompt as a pane in the lower 20% of the screen. &nbsp;This is useful in so many ways. &nbsp;I use it most often for running tests. &nbsp;Using the vim add-on <a href="https://github.com/epeli/slimux">slimux</a>, I can easily send commands to any pane or window I want. &nbsp;Telling that pane to run a test generally requires no more than two keystrokes.</p>
+
+
+<p>An amazing plugin for Sublime that lets you test is RubyTest. &nbsp;<span>However, tmux allows me to do much more than test. &nbsp;It gives me a full terminal to use that I can expand anytime I want. &nbsp;For example, if I edited a User model to include some database migrations, I would need to run rake db:migrate and rake db:test:prepare before running my actual tests. &nbsp;In Sublime, this requires switching to the terminal app and running those commands, and switching back. &nbsp; In vim, I could accomplish this with :! rake....but the resulting output would take up the screen until I pressed enter.</span></p>
+
+
+<p><span>With tmux, I can do both of these from my text editor without losing focus of my text editor. &nbsp;I am able to see the results of the test and keep typing code.</span></p>
+
+
+<p>The main advantage of tmux is that I don't have to leave tmux for routine editing. &nbsp;Of course, my workflow would be different if I was doing front-end work (designing the site, making sure javascript worked, etc).&nbsp;</p>
+
+
+<p><strong>Windows</strong></p>
+
+
+<p>Windows are pretty much just tabs. &nbsp;To my knowledge, tmux doesn't really add anything crazy to it, but they are there.&nbsp;</p>
+
+
+<p><strong>Persistence</strong></p>
+
+
+<p>tmux has sessions, and it stores persistence. &nbsp;Unless I restart my computer(which does end the session), when I open tmux again, my session will still remain there. &nbsp;Tmux doesn't <em>save&nbsp;</em>my session. &nbsp;It keeps running it and by opening tmux again, I am just re-connecting to it.&nbsp;</p>
+
+
+<p>There are at least two major advantages of this. &nbsp;First, I can quit terminal and come back to my work later without any hesitation. &nbsp;Second, when I return, apps that were running will still be running. &nbsp;I don't need to restart my rails server. &nbsp;I don't need to open up my rails console again. &nbsp;</p>
+
+
+<p><strong>Sessions</strong></p>
+
+
+<p>You can have as many sessions as you want. &nbsp;For me, this means having different projects as different sessions. &nbsp;This allows me to switch between them (or work on both of them) at once really easily. &nbsp;Persistence, as mentioned above, becomes incredibly more useful when dealing with multiple projects.</p>
+
+
+<p><strong>Negatives</strong></p>
+
+
+<p>Copy and paste from the Mac clipboard does require an additional program (reattach-to-user-namespace) and work, but it is manageable and worth it.&nbsp;</p>
+
+
+<p><strong>Plugins worth mentioning</strong></p>
+
+
+<p><a href="https://github.com/aziz/tmuxinator">Tmuxinator</a> allows you to set defaults and save those projects. &nbsp; Slimux lets you send commands to specific panes. &nbsp;<a href="https://github.com/jgdavey/vim-turbux">Vim-turbux</a> allows you to send testing commands to panes.</p>
+
+
+<p><strong>Conclusion</strong></p>
+
+
+<p>Sorry if any of it came off as confusing; I definitely recommend going through a few of the resources below to get a better understanding of tmux's power.</p>
+
+
+<p>I do love working in tmux, but like vim, there is a slight learning curve before becoming really effective with it. &nbsp;Like vim, the preset defaults aren't terrific.</p>
+
+
+<p>The above reasons are why tmux works well for me. &nbsp;There are a lot of reasons to switch that I haven't covered, like working on an <a href="http://bergie.iki.fi/blog/six-weeks-working-android/">android tablet</a> efficiently or using it to <a href="http://pivotallabs.com/how-we-use-tmux-for-remote-pair-programming/">pair program</a>. &nbsp;</p>
+
+
+<p><strong>Resources</strong></p>
+
+
+<p>Below are some pretty good resources on experimenting with .tmux and setting it up well. &nbsp;$ indicates a paid resource.</p>
+
+
+<ul>
+<li><span>$&nbsp;<a href="http://pragprog.com/book/bhtmux/tmux">tmux: Productive Mouse Free Development</a> is probably the best guide on tmux there is.&nbsp;</span></li>
+<li><span>$ <a href="https://learn.thoughtbot.com/products/4-humans-present-tmux">Thoughtbot - Humans Present Tmux</a></span></li>
+<li><a href="http://robots.thoughtbot.com/post/2641409235/a-tmux-crash-course"><span>Thoughtbot - Tmux Crash Course</span></a></li>
+<li><span><a href="http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x">Thoughtbot - How to Copy and Paste with tmux</a><br /></span></li>
+<li><a href="http://www.youtube.com/watch?v=vHdiXoHKSgU"><span>LA Ruby Conf Talk</span></a></li>
+<li><span><a href="http://thechangelog.com/episode-0-7-3-tmux-with-brian-hogan-and-josh-clayton/">The Changelog, Tmux with Brian Hogan and Josh Clayton</a></span></li>
+<li>Other people's dotfiles. &nbsp;I wouldn't recommend <a href="https://github.com/djquan/dotfiles">mine</a>; Josh Clayton is a proficient user and has all <a href="https://github.com/joshuaclayton/dotfiles">his dotfiles up.<br /></a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
