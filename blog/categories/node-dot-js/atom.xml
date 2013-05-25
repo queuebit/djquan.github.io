@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node.js | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/node-dot-js/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-05-25T15:40:43-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Node.js and more]]></title>
+    <link href="http://djquan.github.io/blog/2013/05/25/updates/"/>
+    <updated>2013-05-25T21:47:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/05/25/updates</id>
+    <content type="html"><![CDATA[<p>This will probably be my last update for about a week.  I&rsquo;m driving cross country on monday, so I won&rsquo;t have too much time to update the blog.  I do plan on learning more through various audio podcasts during the drive.  Some of them include:</p>
+
+<ul>
+<li>The Changelog</li>
+<li>RubyRogues</li>
+<li>Giant Robots Smashing into Other Giant Robots</li>
+<li>Ruby Freelancers</li>
+<li>Javascript Jabber</li>
+</ul>
+
+
+<p>Feel free to post suggestions in the comments section. Learning to program is inherently visual and tactile, but there must be some other good audio only resources out there.  It is too bad there aren&rsquo;t many audio versions of technical books.</p>
+
+<p>I&rsquo;ve written a bit on Thoughtbot&rsquo;s Learn Prime.  This week, they had a pretty awesome &ldquo;Ask Me Anything&rdquo; session with Ben Orenstein. More features like this would definitely make Learn Prime appealing after I have finished all of their workshops.</p>
+
+<p>I&rsquo;ve signed up for an online <a href="http://vimcasts.org/classes/core-vim">vim seminar</a> on June 3rd that should raise my vim skills to the next level. I&rsquo;ll be sure to post my thoughts on that.</p>
+
+<p>Web development is much more than knowing how to write a Ruby on Rails app.  Learning javascript well is becoming a major priority for me.  Javascript isn&rsquo;t the prettiest language, but a lot of the exciting frameworks (backbone, ember, node, angular) rely on it.</p>
+
+<p>Node.js is a server-side system of responding to events quickly and reliably. I definitely recommend the Code School course on it.  It was one of the more challenging courses, and I learned more because of that.</p>
+
+<p>Log for 5/23 &ndash; 5/25</p>
+
+<ul>
+<li>Code School &ndash; Real Time Web with Node.js</li>
+<li>Thoughtbot &ndash; Test Driven Rails, Interacting with 3rd Party Services</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
