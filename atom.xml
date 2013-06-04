@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-05-25T15:56:39-04:00</updated>
+  <updated>2013-06-03T17:14:20-07:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -14,9 +14,41 @@
 
   
   <entry>
+    <title type="html"><![CDATA[and back]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/03/and-back/"/>
+    <updated>2013-06-03T16:43:00-07:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/03/and-back</id>
+    <content type="html"><![CDATA[<p>Back to learning!</p>
+
+<p>I recommend checking out the Ruby Rogues episode on imposter syndrom.  As someone new to programming, it&rsquo;s nice to hear that even the experts can feel like they don&rsquo;t belong or people will realize that they don&rsquo;t know as much as they should.</p>
+
+<p>I recently attended a webinar on vim by Drew Neil, the man who wrote <em>Practical Vim</em>.  I definitely recommend attending; it is easily worth the relatively steep price.  I&rsquo;d read (or skim) the book and check out some of his vimcasts beforehand to get the most out of it.  The major focus points were: Macros and text objects, but I also feel more comfortable just dealing with registers, buffers, and args.</p>
+
+<p>vim helpful tip for your .vimrc.  This lets you use the dot command in visual mode. Great for applying the last change on many lines.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="c">&quot; adds dot command to visual mode &quot;</span>
+</span><span class='line'><span class="nb">vnoremap</span> . :norm.<span class="p">&lt;</span>CR<span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Say you wanted to add a semicolon to multiple lines.</p>
+
+<p>A;       ~  Appends a semicolon to the current line</p>
+
+<p>vG       ~  Selects to the last line of the file, could easily be a different selector.</p>
+
+<p>.         ~  Appends a semicolon to every line selected.</p>
+
+<p>No idea why this doesn&rsquo;t work out of the box for vim.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Node.js and more]]></title>
     <link href="http://djquan.github.io/blog/2013/05/25/updates/"/>
-    <updated>2013-05-25T21:47:00-04:00</updated>
+    <updated>2013-05-25T21:47:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/25/updates</id>
     <content type="html"><![CDATA[<p>This will probably be my last update for about a week.  I&rsquo;m driving cross country on monday, so I won&rsquo;t have too much time to update the blog.  I do plan on learning more through various audio podcasts during the drive.  Some of them include:</p>
 
@@ -53,7 +85,7 @@
   <entry>
     <title type="html"><![CDATA[progress]]></title>
     <link href="http://djquan.github.io/blog/2013/05/22/progress/"/>
-    <updated>2013-05-22T17:47:00-04:00</updated>
+    <updated>2013-05-22T17:47:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/22/progress</id>
     <content type="html"><![CDATA[<p>The RubyNation <a href="http://www.rubynation.org/schedule">Speaker List</a> looks amazing. Sandi Metz, Avdi Grimm, Russ Olsen, Steve Klabnik&hellip;I&rsquo;m definitely excited about it.</p>
 
@@ -80,7 +112,7 @@
   <entry>
     <title type="html"><![CDATA[Law and Development]]></title>
     <link href="http://djquan.github.io/blog/2013/05/19/progress/"/>
-    <updated>2013-05-19T18:17:00-04:00</updated>
+    <updated>2013-05-19T18:17:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/19/progress</id>
     <content type="html"><![CDATA[<p>The Ruby Rogues episode on <a href="http://rubyrogues.com/105-rr-regular-expressions-with-nell-shamrell/">regular expressions</a> is pretty awesome. Regular expressions are a way to express patterns in a programming language.  Regular expressions are powerful, but can be very intimidating. <a href="http://rubular.com">Rubular</a> is a nice tool to play around with them, and the chapter on regular expressions in <em>The Well Grounded Rubyist</em> provides a great explanation.</p>
 
@@ -104,7 +136,7 @@
   <entry>
     <title type="html"><![CDATA[relative numbers]]></title>
     <link href="http://djquan.github.io/blog/2013/05/16/progress/"/>
-    <updated>2013-05-16T14:14:00-04:00</updated>
+    <updated>2013-05-16T14:14:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/16/progress</id>
     <content type="html"><![CDATA[<p>One of the great things about the ruby (and software community in general) is that there are a lot of resources available to learn from.</p>
 
@@ -124,7 +156,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
     <link href="http://djquan.github.io/blog/2013/05/16/octopress/"/>
-    <updated>2013-05-16T13:33:00-04:00</updated>
+    <updated>2013-05-16T13:33:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/16/octopress</id>
     <content type="html"><![CDATA[<p>Well, the switch to Octopress seems pretty complete.  Here are just a few of my thoughts on it.</p>
 
@@ -151,7 +183,7 @@
   <entry>
     <title type="html"><![CDATA[Migration from Tumblr]]></title>
     <link href="http://djquan.github.io/blog/2013/05/15/migration-from-tumblr/"/>
-    <updated>2013-05-15T15:31:00-04:00</updated>
+    <updated>2013-05-15T15:31:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/15/migration-from-tumblr</id>
     <content type="html"><![CDATA[<p>I will slowly be making a move from tumblr to octopress.</p>
 
@@ -168,7 +200,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[tmux]]></title>
     <link href="http://djquan.github.io/blog/2013/05/14/tmux/"/>
-    <updated>2013-05-14T15:55:00-04:00</updated>
+    <updated>2013-05-14T15:55:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/14/tmux</id>
     <content type="html"><![CDATA[<p><strong>Intro to tmux</strong></p>
 
@@ -273,7 +305,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Backbone, round 1]]></title>
     <link href="http://djquan.github.io/blog/2013/05/14/backbone-round-1/"/>
-    <updated>2013-05-14T12:57:00-04:00</updated>
+    <updated>2013-05-14T12:57:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/14/backbone-round-1</id>
     <content type="html"><![CDATA[<p>There are a lot of javascript frameworks out there. &nbsp;<a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">This article</a> and <a href="http://todomvc.com/">this site</a> helped to clear up some of my confusion.&nbsp;</p>
 
@@ -307,7 +339,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Pull Request]]></title>
     <link href="http://djquan.github.io/blog/2013/05/11/pull-request/"/>
-    <updated>2013-05-11T16:03:00-04:00</updated>
+    <updated>2013-05-11T16:03:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/11/pull-request</id>
     <content type="html"><![CDATA[<p>Obligatory first pull request post! For those that don&#8217;t know, a pull request is a way of contributing back to the open source community. &nbsp;You request that the creator/maintainer&nbsp;of a particular piece of software incorporate your code into the overall code to add a feature or fix a bug. &nbsp;</p>
 
@@ -338,7 +370,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Tapas]]></title>
     <link href="http://djquan.github.io/blog/2013/05/07/tapas/"/>
-    <updated>2013-05-07T16:08:00-04:00</updated>
+    <updated>2013-05-07T16:08:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/07/tapas</id>
     <content type="html"><![CDATA[<p><p>Ruby Tapas are short screencasts that cover small topics of the Ruby language.   Access to them is $9/month, and the creator (Avdi Grimm) releases three per week.   Go to the site and listen to any number of the free ones he provides and you will realize that it is a great bargain.  I&#8217;m currently working my way through them all and learning a lot. </p>
 <p><a href="http://testfirst.org/learn_ruby">Test First Ruby</a> is a pretty interesting way to practice programming.  It&#8217;s a lot like RubyKoans in the sense that it relies on TDD.  There are many chapters with different objects.  For example, one chapter has you create a pig-latin converter.  Another tasks you to create a Reverse Polish Notion calculator.   Some are a lot simpler, like extending the Array class to add a function (of course, whether doing so is a smart idea is another thing). </p>
@@ -354,7 +386,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Efficiency]]></title>
     <link href="http://djquan.github.io/blog/2013/05/01/efficiency/"/>
-    <updated>2013-05-01T16:14:00-04:00</updated>
+    <updated>2013-05-01T16:14:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/05/01/efficiency</id>
     <content type="html"><![CDATA[<p><p><span>A major lesson I&#8217;ve learned from experimenting with vim is that efficiency does matter, no matter the editor.  The tools a person chooses are important, and it&#8217;s important to be efficient and precise with them.  </span></p>
 <p>In vimadventures, they have these levels where you have to accomplish certain editing and navigating texts within a certain number of keystrokes. The goal is to make you think about it now, so that it can be engrained later.  </p>
@@ -373,7 +405,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Thoughtbot - Intermediate]]></title>
     <link href="http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate/"/>
-    <updated>2013-04-29T16:16:00-04:00</updated>
+    <updated>2013-04-29T16:16:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate</id>
     <content type="html"><![CDATA[<p><p><span>I finished Thoughtbot&#8217;s Intermediate Ruby on Rails Workshop.  I, without a doubt, learned a lot from it.  I</span><span>t works out to being $100 with a Learn Prime subscription.   For that price, you get the material (approximately four hours of video), and constant access to the instructor and office hours every week.  I&#8217;d recommend this workshop for this access more than the content (which was quite good too).   I&#8217;m going to be their taking online Test Driven Rails Workshop in May. </span></p>
 <p>The Well Grounded Rubyist is an amazing book.  I have a much better understanding of Ruby after reading it.   The first half of the book really prepares you for the second, and it goes from good to amazing in Chapter 10: Enumerables.   It is a long book, but I highly recommend taking a look as it greatly enhanced my comprehension (and love) of Ruby.  </p>
@@ -401,7 +433,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[App Academy]]></title>
     <link href="http://djquan.github.io/blog/2013/04/21/app-academy/"/>
-    <updated>2013-04-21T11:34:00-04:00</updated>
+    <updated>2013-04-21T11:34:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/04/21/app-academy</id>
     <content type="html"><![CDATA[<p>I have been accepted and will attend <a href="http://www.appacademy.io/">App Academy</a> in September. &nbsp;App Academy is a <a href="http://www.wired.com/business/2013/03/free-learn-to-code-boot-camp/">well respected</a>&nbsp;&#8220;bootcamp&#8221; for web development. &nbsp;Having been through a fairly difficult police academy, using the term bootcamp for a programming course is difficult for me&#8230;.but I have no doubt that it will be among the most difficult challenges I have tackled.</p>
 
@@ -455,7 +487,7 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
   <entry>
     <title type="html"><![CDATA[Older posts..]]></title>
     <link href="http://djquan.github.io/blog/2013/04/12/older-posts/"/>
-    <updated>2013-04-12T16:17:00-04:00</updated>
+    <updated>2013-04-12T16:17:00-07:00</updated>
     <id>http://djquan.github.io/blog/2013/04/12/older-posts</id>
     <content type="html"><![CDATA[<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
 ]]></content>
