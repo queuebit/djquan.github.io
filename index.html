@@ -7,7 +7,7 @@
 	<meta name="author" content="Daniel Quan">
 
 	
-	<meta name="description" content="Jun 3rd, 2013 vim And Back Back to learning! I recommend checking out the Ruby Rogues episode on imposter syndrom. As someone new to programming, it &hellip;">
+	<meta name="description" content="Jun 4th, 2013 design, sass Design I&rsquo;ve started to dive into some more design resources. Code School&rsquo;s Journey into Mobile is a pretty &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,69 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-04T14:19:00-07:00" data-updated="true" itemprop="datePublished">Jun 4<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/design/'>design</a>, <a class='category' href='/blog/categories/sass/'>sass</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013/06/04/update/" itemprop="url">Design</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>I&rsquo;ve started to dive into some more design resources.</p>
+
+<p>Code School&rsquo;s Journey into Mobile is a pretty good introduction to responsive design. Responsive design is designing your site so that it looks good in varying resolutions and devices.  It is extremely important with the variety of ways people can visit a site. It involves using percentages or ems (relative units in css).  Also, it involves finding &ldquo;break points&rdquo;, resolutions which the site design changes. All in all, it was eye opening at the amount of thought and work that it takes to make a site responsive; especially since tools like Twitter&rsquo;s Bootstrap can hide all the magic of responsive design.</p>
+
+<p>Sass is stylesheet language that compiles into CSS.  It lets you do more with less lines of code.  It&rsquo;s similar to CoffeeScript, in the sense that it 1.) simplifies the syntax and 2.) makes it feel more like a programming language.  For example, the text below is in Sass.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sass'><span class='line'><span class="nv">$authors</span><span class="o">:</span> <span class="n">bob</span> <span class="n">tim</span> <span class="n">sue</span> <span class="n">kate</span>
+</span><span class='line'><span class="nc">.author</span>
+</span><span class='line'>  <span class="na">float</span><span class="o">:</span> <span class="no">left</span>
+</span><span class='line'>  <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="o">/</span> <span class="nf">length</span><span class="p">(</span><span class="nv">$authors</span><span class="p">)</span>  <span class="c1">// automatically updates if $authors changes</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>$authors is a list, which functions much like an array.  You can iterate through it using each, find the index of a value, and many more commands you&rsquo;d expect from an array.  The example above automatically updates the width of a css selector (.author) to adjust to adding new authors.</p>
+
+<p>Log</p>
+
+<ul>
+<li>Thoughtbot &ndash; Completed Test Driven Rails Workshop</li>
+<li>Thoughtbot &ndash; Design for Developers Workshop, Principles of Visual Design</li>
+<li>Code School &ndash; Assembling Saas, Part I</li>
+<li>Code School &ndash; Assembling Sass, Part II</li>
+<li>Code School &ndash; Journey into Mobile</li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -630,59 +693,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 
 
 <p></p>
-
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-11T16:03:00-07:00" data-updated="true" itemprop="datePublished">May 11<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/11/pull-request/" itemprop="url">Pull Request</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Obligatory first pull request post! For those that don&#8217;t know, a pull request is a way of contributing back to the open source community. &nbsp;You request that the creator/maintainer&nbsp;of a particular piece of software incorporate your code into the overall code to add a feature or fix a bug. &nbsp;</p>
-
-
-<p>My first pull request was to <a href="https://github.com/lra/mackup">mackup</a>, a program that lets you keep all your dotfiles (specific configuration files for a variety of apps) in sync through Dropbox. &nbsp;This is an entirely easy thing to do without this software through creating symbolic links, but mackup automates this process, cutting down a lot of time and commands. &nbsp;My contribution was adding support for tmuxinator and teamocil dotfiles. &nbsp;It was only about five lines of additional code, but it still feels good to add features onto a piece of software I use regularly. &nbsp; &nbsp;&nbsp;</p>
-
-
-<p>Once again, I&#8217;ll recommend Thoughtbot&#8217;s Learn Prime. &nbsp;I&#8217;m currently doing their Test Driven Rails course, and it has been pretty informative so far. &nbsp;It&#8217;s also pretty nice to learn about testing from one of the contributors to FactoryGirl. &nbsp;With learn prime, you get posting privileges to the new <a href="http://forum.thoughtbot.com/">thoughtbot forums</a>. &nbsp;It&#8217;s pretty nice having a a lifeline to the thoughtbot team(including the chat pytel, the ceo, and ben orenstein) on any topic.&nbsp;</p>
-
-
-<p>If you do any kind of front end text editing, Emmet (formerly zen-coding) is definitely <a href="http://docs.emmet.io/">worth a look.</a>&nbsp;&nbsp;</p>
-
-
-<p>Log for 5/8 - 5/11</p>
-
-
-<ul>
-<li>Thoughtbot - Test Driven Rails, Writing Integration Tests</li>
-<li>Thoughtbot - Humans Present tmux</li>
-<li><a href="http://www.youtube.com/watch?v=vHdiXoHKSgU">Ruby Productivity with Vim and Tmux</a> talk</li>
-<li>Started jumpstart labs event-manager tutorial (will try this tutorial entirely in vim)</li>
-<li>Ruby Rogues - Episode 104, Book Club discussing The Rails View&nbsp;</li>
-</ul>
 
 
 		

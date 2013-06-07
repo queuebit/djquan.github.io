@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: design | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/design/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-06-07T14:09:44-07:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Design]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/04/update/"/>
+    <updated>2013-06-04T14:19:00-07:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/04/update</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve started to dive into some more design resources.</p>
+
+<p>Code School&rsquo;s Journey into Mobile is a pretty good introduction to responsive design. Responsive design is designing your site so that it looks good in varying resolutions and devices.  It is extremely important with the variety of ways people can visit a site. It involves using percentages or ems (relative units in css).  Also, it involves finding &ldquo;break points&rdquo;, resolutions which the site design changes. All in all, it was eye opening at the amount of thought and work that it takes to make a site responsive; especially since tools like Twitter&rsquo;s Bootstrap can hide all the magic of responsive design.</p>
+
+<p>Sass is stylesheet language that compiles into CSS.  It lets you do more with less lines of code.  It&rsquo;s similar to CoffeeScript, in the sense that it 1.) simplifies the syntax and 2.) makes it feel more like a programming language.  For example, the text below is in Sass.</p>
+
+<p><code>sass
+$authors: bob tim sue kate
+.author
+  float: left
+  width: 100% / length($authors)  // automatically updates if $authors changes
+</code></p>
+
+<p>$authors is a list, which functions much like an array.  You can iterate through it using each, find the index of a value, and many more commands you&rsquo;d expect from an array.  The example above automatically updates the width of a css selector (.author) to adjust to adding new authors.</p>
+
+<p>Log</p>
+
+<ul>
+<li>Thoughtbot &ndash; Completed Test Driven Rails Workshop</li>
+<li>Thoughtbot &ndash; Design for Developers Workshop, Principles of Visual Design</li>
+<li>Code School &ndash; Assembling Saas, Part I</li>
+<li>Code School &ndash; Assembling Sass, Part II</li>
+<li>Code School &ndash; Journey into Mobile</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
