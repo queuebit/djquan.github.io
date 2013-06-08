@@ -4,7 +4,7 @@
   <title><![CDATA[Category: design | Daniel Quan]]></title>
   <link href="http://djquan.github.io/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-07T22:15:33-07:00</updated>
+  <updated>2013-06-07T22:27:19-07:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Design]]></title>
-    <link href="http://djquan.github.io/blog/2013/06/04/update/"/>
-    <updated>2013-06-04T14:19:00-07:00</updated>
-    <id>http://djquan.github.io/blog/2013/06/04/update</id>
+    <link href="http://djquan.github.io/blog/2013/06/07/update/"/>
+    <updated>2013-06-07T14:19:00-07:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/07/update</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve started to dive into some more design resources.</p>
 
 <p>Code School&rsquo;s Journey into Mobile is a pretty good introduction to responsive design. Responsive design is designing your site so that it looks good in varying resolutions and devices.  It is extremely important with the variety of ways people can visit a site. It involves using percentages or ems (relative units in css).  Also, it involves finding &ldquo;break points&rdquo;, resolutions which the site design changes. All in all, it was eye opening at the amount of thought and work that it takes to make a site responsive; especially since tools like Twitter&rsquo;s Bootstrap can hide all the magic of responsive design.</p>
