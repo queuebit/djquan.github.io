@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Daniel Quan]]></title>
   <link href="http://djquan.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-07T14:09:44-07:00</updated>
+  <updated>2013-06-07T22:03:10-07:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,156 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vim and Me]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/08/vim-and-me/"/>
+    <updated>2013-06-08T15:31:00-07:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/08/vim-and-me</id>
+    <content type="html"><![CDATA[<p><strong>Introduction</strong></p>
+
+<p>vim is a text editor, but it is so much more too.  This post will go over why vim works <em>for me</em> and my setup, including plugins.</p>
+
+<p>This post will be similar to my <a href="http://quan.io/blog/2013/05/14/tmux/">post on tmux</a>, with an emphasis on the plugins I use and how they fit into my workflow.  I am a beginner;  I still have a tremendous amount of learning about vim, <em>and this post is for fellow beginners out there.</em></p>
+
+<p>This is also not a &ldquo;vim is better than sublime/emacs/textmate/eclipse/rubymine&rdquo; post.  This is just me laying out some thoughts on my experience with vim and my setup.</p>
+
+<p>This is not a guide on how to use vim.  Check out some of the links at the bottom for some good resources.  The <em>best</em> resource on vim (that I have found) is Practical Vim by Drew Neil.</p>
+
+<p>Moreover, this is also serving as a way to downsize my vimrc file by justifying everything in it.</p>
+
+<p>My recommendation is, no matter what editor you use, think about how to improve your workflow and become more efficient.  Is there a way you can do what you want with less keystrokes?  Do you really need to reach for the mouse?  What plugins are your favorite, and are you using them in the best way?  How can you make your editor leaner?</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6565481/vim.png" alt="vim" /></p>
+
+<p><strong>Does a beginner really need to use vim?</strong></p>
+
+<p>No, of course not.  I came to vim only after I felt comfortable with ruby, looking to improve my workflow. My advice: make sure you have that some comfort with whatever language(s) you chose before experimenting with vim.</p>
+
+<p>That said, learning vim early can do a few good things.  So you made a mistake and didn&rsquo;t press a or i to enter insert mode to begin typing.  Well, you can retype it again and have the added bonus of repetition in learning the basics.  You also get the baby-steps and issues of learning vim out of the way, so that when you <em>need</em> to be typing fast with few mistakes, you can.  To put it another way, make your mistakes now in both vim and #{whatever programming language you are learning} so that you won&rsquo;t make them later.</p>
+
+<p><strong>Why should I even bother?</strong></p>
+
+<ul>
+<li>Efficiency &ndash; Modal editing, despite taking a while to get a hang of, can lead to improving efficiency. The mouse, while typing, is the enemy.  The time it takes to move between the mouse and keyboard can add up.</li>
+<li>The Dot command &ndash; Vim knows what you did last. Actions, like adding text, deleting lines, can be repeated by pressing . on your keyboard.  This is extremely powerful in programming, where often you need to repeat an action.</li>
+<li>Text Objects &ndash;  Text objects, when combined with modal editing, are great.  Say I&rsquo;m typing a sentence, and I want to rewrite the entire thing.  I can press cis anywhere in that sentence to delete it all and throw me into insert mode.  They are pretty cool.</li>
+<li>Editing text on a server &ndash; If you haven&rsquo;t already, someday soon any beginner will eventually get to the point where he has to edit text on a server. That server will have vim on it. Any investment, even if you chose to edit with something else primarily, in learning vim can pay off when that comes up.</li>
+<li>Command line &ndash; Even without tmux, it is easy to use the command line and all of it&rsquo;s power from the editor itself.</li>
+<li>Vim + Tmux = Amazingness</li>
+</ul>
+
+
+<p><strong>Plugins</strong> (in no particular order)</p>
+
+<p><em><a href="https://github.com/gmarik/vundle">Vundle</a></em>:
+Vundle is a plugin manager. Basically, installing a plugin with it involves adding &lsquo;Bundle &ldquo;github/pathofplugin&rdquo;&rsquo; to your vimrc file, and typing :BundleInstall in vim (after reloading your source file).  Use this or Tim Pope&rsquo;s <a href="https://github.com/tpope/vim-pathogen">Pathogen</a> for managing your plugins.  Both are great.</p>
+
+<p><em><a href="https://github.com/kien/ctrlp.vim">Ctrl-P</a></em>:
+Ctrl-P is a fuzzy file finder for vim. It is quick and efficient. It&rsquo;s much more efficient than &ldquo;:e filename.rb&rdquo; and is my preferred method of finding files.</p>
+
+<p><em><a href="https://github.com/godlygeek/tabular">Tabularize</a></em>:
+Tabular makes it easy to align text based on a target. There is a nice <a href="http://vimcasts.org/episodes/aligning-text-with-tabular-vim/">vimcast</a> that does a great job explaining this. Basically, if I wanted to align text for variable assignment based on an equal sign, I could just type :Tab /=  and all of the equal signs would be aligned in the same column.</p>
+
+<p><em><a href="https://github.com/tpope/vim-unimpaired">Unimpaired</a></em>:
+Unimpaired provides handy shortcuts for switching between buffers/args/etc. Instead of pressing &ldquo;:bn&rdquo; to get to the next buffer, unimapired allows you to press [b to get to the next buffer.</p>
+
+<p><em><a href="https://github.com/benmills/vimux">vimux</a></em>:
+Allows easy integration with tmux.  Bind a leader combo to open up a new tmux pane and run a command in it.  Amazing.  Also, amazing in conjunction with vim-turbux.</p>
+
+<p><em><a href="https://github.com/jgdavey/vim-turbux">vim-turbux</a></em>:
+See above, automates the process of testing in conjunction with tmux.</p>
+
+<p><em><a href="https://github.com/tpope/vim-endwise">vim-endwise</a></em>:
+Adds &ldquo;end&rdquo; wherever it needs be automatically.  class, def, if, it should do; can handle them all and more.</p>
+
+<p><em><a href="https://github.com/townk/vim-autoclose">vim-autoclose</a></em>:
+Autocloses parenthesis, brackets, quotes, single quotes, backticks, etc.  Helpful.</p>
+
+<p><em><a href="https://github.com/jeffkreeftmeijer/vim-numbertoggle">vim-numbertoggle</a></em>:
+This one has grown on me.  I like relative number for ease of navigating.  Relative number lets me not have to count as much.  I don&rsquo;t need relative number on all the time, and numbertoggle switches between them when I go into insert mode.</p>
+
+<p><em><a href="http://github.com/mattn/gist-vim">gist-vim</a></em>:
+This one I don&rsquo;t use enough to have anything memorized.  But it is there, and allows easy code sharing when I need it.</p>
+
+<p><em><a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a></em>:
+An amazing plugin; if you are a heavy git user, this alone might be enough to make you switch to vim. <a href="http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/">Vimcasts</a> has a nice set of tutorials on using fugitive.  The short of it is: vim-fugitive gives you the history(through git) on changes, files, and commits. Typing :Gdiff opens up a split pane with a line by line colored comparison of changes I have made to a file.</p>
+
+<p><em><a href="https://github.com/epmatsw/ag.vim">ag</a></em>:
+The vim plugin for integrating the silver searcher.  The Silver Searcher is a replacement for Ack, which is often used instead of grep.  This plugin gives you a nice popup menu for ag searches by typing :Ag &ldquo;searchterm&rdquo;<CR></p>
+
+<p><em><a href="https://github.com/tpope/vim-rails">vim-rails</a></em>:
+This plugin is obviously only good for those rails developers out there.  Enhanced syntax highlighting is nice, but just the tip.  Vim-rails has ways of easily and intelligently navigating the directory ~ it knows your controllers, your models, and your views.  There are more features, but I&rsquo;m still learning them.</p>
+
+<p><em><a href="https://github.com/scrooloose/syntastic">vim-syntastic</a></em>:
+Points out syntax errors.  On write(:w), it&rsquo;ll check and throw arrows in the margin of lines it thinks there&rsquo;s issues with.  These issues could be a number of things that it thinks is wrong.</p>
+
+<p><em><a href="https://github.com/tpope/vim-surround">vim-surround</a></em>:
+Another fantastic plugin by Tim Pope.  Say I wanted to change a string declaration from a = &ldquo;hello&rdquo; to a = &lsquo;hello&rsquo;.   I just place my cursor on any letter in hello and type cs"&lsquo; and it changes it automatically. Especially helpful with changing HTML tags since you can replace things with valid html. It can also add (instead of just changing) with ys[textobject][whatever you want to add].</p>
+
+<p><em><a href="https://github.com/mattn/zencoding-vim">zencoding</a></em>:
+Zencoding/Emmet is a way of expanding short bits of code into longform html. Definitely check out the video here, <a href="http://docs.emmet.io/">http://docs.emmet.io/</a> .  It&rsquo;s an extremely efficient way of writing html.</p>
+
+<p>I probably still need a good snippet tool.  I&rsquo;m looking at ultisnip or snipmate; I haven&rsquo;t really felt the need to have one <em>yet</em>.  Vim-Autoclose and endwise help a lot already.  Zencoding handles much of my html needs.</p>
+
+<p><strong> Some helpful .vimrc lines </strong></p>
+
+<p>I&rsquo;m pretty sure I got all of these from Drew Neil.</p>
+
+<p>```vim
+&ldquo; Easy expansion of filepath. Type %% in command mode and it puts your current directory
+cnoremap <expr> %% getcmdtype() == &lsquo;:&rsquo; ? expand(&lsquo;%:h&rsquo;).&lsquo;/&rsquo; : &lsquo;%%&rsquo;</p>
+
+<p>&ldquo;Reloads source file on save
+if has("autocmd&rdquo;)
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif</p>
+
+<p>&ldquo;Leader &ndash; v to open sourcefile
+nmap <Leader>v :vsp $MYVIMRC<CR></p>
+
+<p>&ldquo; adds dot command to visual mode
+vnoremap . :norm.<CR>
+```</p>
+
+<p><strong>Negatives</strong></p>
+
+<p>There is no getting around it:  Vim has a learning curve.  However, it may not be as steep as you think.  It may take a few days for the basic ideas of normal/insert/visual/etc modes to click.  Navigating may be tricky at first.  You may find yourself wishing that you had a mouse on many occasions.  But it passes, and you gain efficiency eventually.</p>
+
+<p>Vim requires out of the box work to get it configured. This is only a negative in the short-term.  In the long term, you have a better understanding of the features in your text editor because you worked to get them there.  I also feel that the small decisions I make in setting it up add up to really make the vim I work on unique and &lsquo;mine.&rsquo;</p>
+
+<p>I can&rsquo;t remember where I heard it from(I think it was the peepcode screencast on vim), but someone said that your .vimrc file is something you can grow old with. Someone also said that if you don&rsquo;t think your .vimrc is the best there is, you need to work on it more.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Vim is a highly customizable text editor.  Getting it set up is an extremely personal ordeal, and I would recommend against using packages that advertise to be the ultimate vim distribution.  One of the great things about vim is that at the end of the day, you are left with an editor that is <em>yours</em>.  Get to know your plugins.  Get to know every setting you have and what it does.  This will help you get the most out of it.</p>
+
+<p>If I haven&rsquo;t convinced you to try vim, I hope I have convinced you to:</p>
+
+<ul>
+<li>Love what editor you do use (we spend enough time on them that this is crucial)</li>
+<li>Think of ways you can improve it</li>
+<li>Think of ways you can be more efficient</li>
+</ul>
+
+
+<p>There are probably countless amazing plugins I haven&rsquo;t mentioned.  My recommendation: don&rsquo;t get caught up in all the &ldquo;what plugin&rdquo; should I use for x until a little later.  Learn the vim basics, and then go plugin-crazy.  Vim is awesome without plugins; plugins just make it that much more amazing.</p>
+
+<p><strong>Resources</strong></p>
+
+<ul>
+<li><a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a> ($)</li>
+<li><a href="http://mislav.uniqpath.com/2011/12/vim-revisited/">Vim Revisted</a></li>
+<li><a href="http://vimcasts.org">Vimcasts</a></li>
+<li><a href="http://vimcasts.org/classes/core-vim">Vim Masterclass</a> ($$)</li>
+<li><a href="http://vim-adventures.com/">Vim Adventures</a></li>
+<li><a href="https://learn.thoughtbot.com/products/2-vim-for-rails-developers">Vim for Rails Developers</a>($$)</li>
+<li>Vimtutor (Type vimtutor in your shell)</li>
+<li>Peep Code has a couple screencasts on vim; I would recommend just watching any of the play by plays (many/most of them use vim).  Ben Orenstein&rsquo;s, in particular, is pretty great on SO many levels.  He also has a <a href="http://www.youtube.com/watch?v=SkdrYWhh-8s">pretty good talk</a> on developing in vim.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[and back]]></title>
