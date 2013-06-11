@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: objective-c | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/objective-c/atom.xml" rel="self"/>
+  <link href="http://djquan.github.io/"/>
+  <updated>2013-06-11T13:39:06-04:00</updated>
+  <id>http://djquan.github.io/</id>
+  <author>
+    <name><![CDATA[Daniel Quan]]></name>
+    <email><![CDATA[djquan@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Objective C]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/11/objective-c/"/>
+    <updated>2013-06-11T12:57:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/11/objective-c</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been struggling a little bit with getting into Objective C.  Ruby is really a fun language to program in, and that was one of the goals it was designed for.  I&rsquo;m really appreciating that more as I dive a little into Objective C.  Granted, it is only through the Code School tutorial, so there may be other best practices and ways to do it that actually make it better.  Take for example functions.  This is an example from the tutorial:</p>
+
+<p>``` objc TalkingiPhone.h (header)</p>
+
+<p>@interface TalkingiPhone : NSObject</p>
+
+<p>@property NSString <em>phoneName;
+@property NSString </em>modelNumber;</p>
+
+<p>&ndash;(NSString <em>)speak:(NSString </em>)greeting;
+@end</p>
+
+<p>```</p>
+
+<p>``` objc TalkingiPhone.m (implementation)</p>
+
+<h1>import &ldquo;TalkingiPhone.h&rdquo;</h1>
+
+<p>@implementation TalkingiPhone
+&ndash;(NSString <em>)speak:(NSString </em>)greeting;
+{
+  NSString *message = [NSString stringWithFormat:@&ldquo;%@ says %@&rdquo;, self.phoneName, greeting];</p>
+
+<p>  return message;
+}
+@end
+```</p>
+
+<p>This just seems really verbose and not intuitive. I mean, the whole thing in ruby could be as simple as:</p>
+
+<p>``` ruby talkingiPhone.rb
+class TalkingiPhone
+  def phoneName</p>
+
+<pre><code># not covered in the above code
+</code></pre>
+
+<p>  end</p>
+
+<p>  def speak greeting</p>
+
+<pre><code>message = "#{self.phoneName} says #{greeting}" # "message = " is optional, but I kept it in.
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<p>That&rsquo;s much more simple, right? No confusing syntax&hellip;no need for explicit variable declarations with type.</p>
+
+<p>Of course the entire code example is trivial in its functionality; but I&rsquo;m sure the point is even more valid the more complex the program will get.</p>
+
+<p>Objective C is still a valuable language to be familiar with, and I fully intend to keep pushing forward on it. I do want to play around with Ruby Motion, but you still need to know your way around objective c for it(since you can use the same APIs and libraries).</p>
+]]></content>
+  </entry>
+  
+</feed>

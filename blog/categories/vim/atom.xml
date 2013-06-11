@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Daniel Quan]]></title>
   <link href="http://djquan.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-07T22:27:19-07:00</updated>
+  <updated>2013-06-11T13:39:06-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Vim and Me]]></title>
     <link href="http://djquan.github.io/blog/2013/06/08/vim-and-me/"/>
-    <updated>2013-06-08T15:31:00-07:00</updated>
+    <updated>2013-06-08T15:31:00-04:00</updated>
     <id>http://djquan.github.io/blog/2013/06/08/vim-and-me</id>
     <content type="html"><![CDATA[<p><strong>Introduction</strong></p>
 
@@ -166,7 +166,7 @@ vnoremap . :norm.<CR>
   <entry>
     <title type="html"><![CDATA[and back]]></title>
     <link href="http://djquan.github.io/blog/2013/06/03/and-back/"/>
-    <updated>2013-06-03T16:43:00-07:00</updated>
+    <updated>2013-06-03T16:43:00-04:00</updated>
     <id>http://djquan.github.io/blog/2013/06/03/and-back</id>
     <content type="html"><![CDATA[<p>Back to learning!</p>
 
@@ -198,7 +198,7 @@ vnoremap . :norm.&lt;CR&gt;
   <entry>
     <title type="html"><![CDATA[Node.js and more]]></title>
     <link href="http://djquan.github.io/blog/2013/05/25/updates/"/>
-    <updated>2013-05-25T21:47:00-07:00</updated>
+    <updated>2013-05-25T21:47:00-04:00</updated>
     <id>http://djquan.github.io/blog/2013/05/25/updates</id>
     <content type="html"><![CDATA[<p>This will probably be my last update for about a week.  I&rsquo;m driving cross country on monday, so I won&rsquo;t have too much time to update the blog.  I do plan on learning more through various audio podcasts during the drive.  Some of them include:</p>
 
@@ -235,7 +235,7 @@ vnoremap . :norm.&lt;CR&gt;
   <entry>
     <title type="html"><![CDATA[progress]]></title>
     <link href="http://djquan.github.io/blog/2013/05/22/progress/"/>
-    <updated>2013-05-22T17:47:00-07:00</updated>
+    <updated>2013-05-22T17:47:00-04:00</updated>
     <id>http://djquan.github.io/blog/2013/05/22/progress</id>
     <content type="html"><![CDATA[<p>The RubyNation <a href="http://www.rubynation.org/schedule">Speaker List</a> looks amazing. Sandi Metz, Avdi Grimm, Russ Olsen, Steve Klabnik&hellip;I&rsquo;m definitely excited about it.</p>
 
@@ -262,7 +262,7 @@ vnoremap . :norm.&lt;CR&gt;
   <entry>
     <title type="html"><![CDATA[relative numbers]]></title>
     <link href="http://djquan.github.io/blog/2013/05/16/progress/"/>
-    <updated>2013-05-16T14:14:00-07:00</updated>
+    <updated>2013-05-16T14:14:00-04:00</updated>
     <id>http://djquan.github.io/blog/2013/05/16/progress</id>
     <content type="html"><![CDATA[<p>One of the great things about the ruby (and software community in general) is that there are a lot of resources available to learn from.</p>
 
