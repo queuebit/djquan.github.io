@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-11T16:30:18-04:00</updated>
+  <updated>2013-06-13T17:53:08-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[More Mobile]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/13/more-mobile/"/>
+    <updated>2013-06-13T16:00:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/13/more-mobile</id>
+    <content type="html"><![CDATA[<p>Just a brief review on Code School&rsquo;s first two courses on iOS development.  I definitely believe that they are worth the time.  Objective C and mobile development is new for me, and it was fairly challenging to start off learning a new language (especially one that wasn&rsquo;t as intuitive as ruby). Still, like most challenges, I began to understand it better the more effort I put in.</p>
+
+<p>The technology behind the courses is impressive. Compiling Objective C/iphone code seems more challenging than compiling ruby code.  Code School has it set up so that their machines build and compile your code.  This lets non-mac users actually experiment with iOS development. It also means that it takes a few seconds to see if you made any errors (which was slightly annoying, but also made me double check my code before hitting submit).</p>
+
+<p>I&rsquo;ve also updated the resources section of the site. It&rsquo;s a categorized list of the resources I&rsquo;ve used so far.  Definitely check it out, and feel free to suggest other resources in the comments.</p>
+
+<p>Ruby Nation is tomorrow!</p>
+
+<p>Log</p>
+
+<ul>
+<li>Code School &ndash; Try Objective C</li>
+<li>Code School &ndash; Try iOS</li>
+<li>Code School &ndash; Git Real 2</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Objective C]]></title>
