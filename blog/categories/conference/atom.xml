@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: RubyNation | Daniel Quan]]></title>
-  <link href="http://djquan.github.io/blog/categories/rubynation/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Conference | Daniel Quan]]></title>
+  <link href="http://djquan.github.io/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
   <updated>2013-06-14T18:23:43-04:00</updated>
   <id>http://djquan.github.io/</id>
@@ -74,33 +74,6 @@ nnoremap &lt;silent&gt; &lt;C-l&gt; :&lt;C-u&gt;nohlsearch&lt;CR&gt;&lt;C-l&gt;
 </code></p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/6565481/rubynation.jpg" alt="RubyNation" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[progress]]></title>
-    <link href="http://djquan.github.io/blog/2013/05/22/progress/"/>
-    <updated>2013-05-22T17:47:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/05/22/progress</id>
-    <content type="html"><![CDATA[<p>The RubyNation <a href="http://www.rubynation.org/schedule">Speaker List</a> looks amazing. Sandi Metz, Avdi Grimm, Russ Olsen, Steve Klabnik&hellip;I&rsquo;m definitely excited about it.</p>
-
-<p>CoffeScript is a language that compiles into javascript.  The Code School course on CoffeeScript was a nice introduction to it, and it was also a good refresher on basic javascript.  The course has a lot of examples of translating from javascript and jquery into pure coffeescript, which I found really helpful.</p>
-
-<p>There is a lot <a href="http://wekeroad.com/2012/03/21/coffeescript-or-straight-up-js-i-suck-either-way/">written</a> about the pros and cons of CoffeeScript weighed against pure JavaScript. I do like that CoffeeScript appears to be more similar in syntax to Ruby. I don&rsquo;t look it as a JavaScript vs CoffeeScript choice.  To write well in CoffeeScript, you need to have a firm understanding of basic JavaScript to debug errors and really understand what&rsquo;s going on.</p>
-
-<p>Recently, I&rsquo;ve done a fair amount of coding(and blogging) using vim exclusively, and I&rsquo;ve been thrilled with how it&rsquo;s going.  I&rsquo;ve improved my efficiency by not having to switch windows to perform tests, rake tasks, or any other command line work.  Moreover, being able to work quickly without using the mouse at all is liberating.</p>
-
-<p>I&rsquo;m still reading through <a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a>, and it&rsquo;s been a great resource so far. I still need to learn more about registers (vim&rsquo;s tools to copy and paste).  I also still need to find a snippet(ways of expanding text) solution that works well for me.  Still, I can&rsquo;t see myself moving away from vim+tmux anytime soon.</p>
-
-<p>Log for 5/20 &ndash; 5/22</p>
-
-<ul>
-<li>Finished the Jumpstart Labs EventManager Tutorial</li>
-<li>Thoughtbot &ndash; Test Driven Rails, Writing Unit Tests</li>
-<li>Code School &ndash; Anatomy of Backbone.js Part 2</li>
-<li>Code School &ndash; CoffeeScript</li>
-</ul>
-
 ]]></content>
   </entry>
   

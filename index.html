@@ -7,7 +7,7 @@
 	<meta name="author" content="Daniel Quan">
 
 	
-	<meta name="description" content="Jun 13th, 2013 More Mobile Just a brief review on Code School&rsquo;s first two courses on iOS development. I definitely believe that they are worth &hellip;">
+	<meta name="description" content="Jun 14th, 2013 Conference, RubyNation Ruby Nation, Day I The first day of RubyNation is done, and I thought I&rsquo;d post some things I learned. &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,97 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-14T16:53:00-04:00" data-updated="true" itemprop="datePublished">Jun 14<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/conference/'>Conference</a>, <a class='category' href='/blog/categories/rubynation/'>RubyNation</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013/06/14/ruby-nation/" itemprop="url">Ruby Nation, Day I</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>The first day of RubyNation is done, and I thought I&rsquo;d post some things I learned.</p>
+
+<p>Sandi Metz did her talk on the magic tricks of testing; you really should check a <a href="http://www.confreaks.com/videos/2452-railsconf2013-the-magic-tricks-of-testing">version</a> of it out.  She, and her book, are amazing for programmers of any level.  This talk is solely on unit testing.  She stresses not over-testing and not repeating test coverage.</p>
+
+<ul>
+<li>Test that your objects, when they receive a query or command, respond to them appropriately.</li>
+<li>Don&rsquo;t test private methods.  If you need to, don&rsquo;t get attached to them; delete them when they break.</li>
+<li>Test that your object sends a particular command; not exactly the consequences of it as another object will test the side-effects.</li>
+<li>Don&rsquo;t test methods that an object sends to itself. Don&rsquo;t test queries that an object sends to another.</li>
+</ul>
+
+
+<p>Really, check out her talk(and her book!).  It&rsquo;s quite good. I particularly like the analogy of objects as space capsules.</p>
+
+<p>Russ Olsen launched RubyNation with an interesting talk on intuition and those &ldquo;Aha!&rdquo; moments. He talked a little bit about pair programming, including a nice little rule:</p>
+
+<ul>
+<li>if your pair and you are stuck, sit in quiet and don&rsquo;t type for two minutes while thinking through the problems.</li>
+</ul>
+
+
+<p>He also discussed another profession that works in pairs in the same manner: police officers. As a former police officer, I could definitely appreciate the comparison. For a lot of my time with the department, I worked directly with a partner.  We were much more effective as a team than independently.</p>
+
+<p>Emily Stolfo had a nice <a href="http://www.confreaks.com/videos/2493-railsconf2013-hacking-the-academic-experience">talk</a> on hacking the academic experience where she listed five traits she tries to teach students:</p>
+
+<ul>
+<li>Use the internet as a textbook</li>
+<li>Able to debug code you didn&rsquo;t write</li>
+<li>Build something to solve a real-life problem</li>
+<li>Engage with the community</li>
+<li>Think critically about code</li>
+</ul>
+
+
+<p>There were a few other memorable talks. Bryan Helmkamp spoke about security in rails applications.  He recommends the <a href="http://brakemanscanner.org/">Brakeman gem</a> for checking vulnerabilities.  It reviews your code for common (but not all) vulnerabilities.</p>
+
+<p>Two people spoke about doing DevOps on President Obama&rsquo;s re-election campaign. Learning about the technologies that went into the campaign was interesting.  It was more from the perspective of a system administrator than a developer, but I still found it helpful in understanding how sites scale.  I&rsquo;ve been focusing on code for the past four months, and it&rsquo;s easy to forget that code is run on machines.  Heroku is fine for playing around with and learning (and it&rsquo;s fine for production environments too), but there are other options and technical considerations when developing a site/application that will actually receive heavy traffic.</p>
+
+<p>I learned a lot, and day two should be just as great. Some final thoughts</p>
+
+<ul>
+<li>Don&rsquo;t be afraid to say you&rsquo;re a complete beginner.  Most people are friendly and want to help.</li>
+<li>There are a lot of freelancers out there making a living off contracts ~ Most said that it was really easy to get contracts.</li>
+<li>Be friendly and introduce yourself to people.</li>
+<li>I&rsquo;m doing better with imposter syndrome.  It&rsquo;s easy to think you don&rsquo;t have the skills to belong at the table, but everyone is learning something.  Some people happen to be learning more.</li>
+<li>It wouldn&rsquo;t be the worst idea to take handwritten notes.</li>
+</ul>
+
+
+<p>Random unrelated vim tip:</p>
+
+<figure class='code'><figcaption><span>Press ctrl-l after a search is complete to turn off highlighting. From Practical Vim. </span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'><span class="nb">nnoremap</span> <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span><span class="k">l</span><span class="p">&gt;</span> :<span class="p">&lt;</span>C<span class="p">-</span><span class="k">u</span><span class="p">&gt;</span><span class="k">nohlsearch</span><span class="p">&lt;</span>CR<span class="p">&gt;&lt;</span>C<span class="p">-</span><span class="k">l</span><span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="https://dl.dropboxusercontent.com/u/6565481/rubynation.jpg" alt="RubyNation" /></p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -756,59 +847,6 @@ Zencoding/Emmet is a way of expanding short bits of code into longform html. Def
 
 
 <p>I like using the <a href="https://github.com/jeffkreeftmeijer/vim-numbertoggle">numbertoggle</a> plugin. It automatically switches to absolute numbers when I switch to insert mode, and it switches back to relative numbers when I leave.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-16T13:33:00-04:00" data-updated="true" itemprop="datePublished">May 16<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/octopress/'>Octopress</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/16/octopress/" itemprop="url">Octopress</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Well, the switch to Octopress seems pretty complete.  Here are just a few of my thoughts on it.</p>
-
-<p>Give octopress a try. It&rsquo;s easy to set up.  It&rsquo;s easy to post content.</p>
-
-<ul>
-<li>Octopress makes it incredibly easy to write and publish from the command line.</li>
-<li>Everything about an octopress blog will be stored locally.</li>
-<li>This gives freedom to switch publishing platforms or web hosts and a local backup of posts(with version control!).</li>
-<li>Octopress is made for coders.  Inserting code snippets is incredibly easy.  There are also a large number of plugins to extend functionality.</li>
-</ul>
-
-
-<p>I will miss some aspects of tumblr.</p>
-
-<ul>
-<li>Tumblr is an incredible way to make connections and really is social blogging at its best.</li>
-<li>Tumblr has apps to make mobile publishing simple.</li>
-</ul>
-
 
 		
 		
