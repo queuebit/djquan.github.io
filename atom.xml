@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-15T21:10:38-04:00</updated>
+  <updated>2013-06-16T16:34:53-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/16/building/"/>
+    <updated>2013-06-16T15:45:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/16/building</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve started to try and build an MVP (minimum viable product).  I&rsquo;m giving myself a week to make and push a fully functional rails app to the web. I&rsquo;ve done a lot of programming in rails already, but it has mostly been following tutorials.  I&rsquo;ve been putting off building something real for lack of any great ideas. So, I&rsquo;ve decided that the idea doesn&rsquo;t matter, just that I build something on my own.  I&rsquo;m not expecting the actual site to get any users; I&rsquo;m more interested in building a fully functional site to add to my portfolio.</p>
+
+<p>My MVP is going to be based around bake sales.  Yup, bake sales.  The problem that my site seeks to answer is that bake sales inherently draw from the members of the organization that is running it.  If there was a way for random bakers to donate their baked goods to organizations, then the organizations could do even better.</p>
+
+<p>Even though I&rsquo;m designing this site expecting to never have any real members, one question I really don&rsquo;t have a solution for is how to deal with food safety/poison. Reviews would be a good place to start..but still doesn&rsquo;t help with newer people? Maybe just encourage organizers to make the baker try a bite of his own food. Maybe adding a verified badge bakers can opt-in on? I guess it&rsquo;s the same problem that a lot of startups like uber and airbnb face;<em> how do you prevent people will ill intent from exploiting your site?</em></p>
+
+<p>What would the baker get out of it besides the warm and fuzzies? Ideally, the site would provide receipts for tax deductions and optionally allow the organization to &ldquo;tip&rdquo; the baker after the sale.</p>
+
+<p>The repository will be evolving <a href="https://github.com/djquan/bake_sale">over here</a>, and eventually I&rsquo;ll launch a functioning version. So far, I&rsquo;ve only added user authentication (through devise) and implemented bootstrap.</p>
+
+<p>Thinking about the logic required, I&rsquo;ll need at least these models:</p>
+
+<ul>
+<li>Users # Bakers</li>
+<li>Reviews for Users</li>
+<li>Organizations</li>
+<li>Bake Sales  # Actual events</li>
+<li>Baked goods at bake sales</li>
+</ul>
+
+
+<p>Random vim newbie lesson.  Say you have some code like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;p</span> <span class="na">class =</span><span class="err"> </span><span class="s">&quot;Random CSS selector&quot;</span><span class="nt">&gt;</span>Random example<span class="nt">&lt;/p&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and your cursor is at the beginning of the line. How would you go about changing &ldquo;Random example&rdquo; to &ldquo;Another scenario&rdquo; in your editor?  If you are using a mouse, you could always grab it, highlight &ldquo;Random example&rdquo;, and start typing &ldquo;Another scenario&rdquo;.  That doesn&rsquo;t require too much energy or time.</p>
+
+<p>In vim, it&rsquo;s even simpler. The keystrokes would be &ldquo;citAnother scenario<CR>&rdquo;.  No need to go to the mouse, no ned to navigate to it. &ldquo;it&rdquo; is a text object for anything inside tags. By pressing &ldquo;cit&rdquo;, you are telling vim to change inside the tags and it automatically puts you in insert mode. Text objects are great, and they are one of the reasons I use vim.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby Nation, Day II]]></title>
@@ -822,60 +861,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Started vimadventures</li>
 <li>Started with Project Euler</li>
 </ul></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[App Academy]]></title>
-    <link href="http://djquan.github.io/blog/2013/04/21/app-academy/"/>
-    <updated>2013-04-21T11:34:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/04/21/app-academy</id>
-    <content type="html"><![CDATA[<p>I have been accepted and will attend <a href="http://www.appacademy.io/">App Academy</a> in September. &nbsp;App Academy is a <a href="http://www.wired.com/business/2013/03/free-learn-to-code-boot-camp/">well respected</a>&nbsp;&#8220;bootcamp&#8221; for web development. &nbsp;Having been through a fairly difficult police academy, using the term bootcamp for a programming course is difficult for me&#8230;.but I have no doubt that it will be among the most difficult challenges I have tackled.</p>
-
-
-<p>I feel really lucky and blessed that I was accepted there. &nbsp;It does seem to be appear one of the hardest programs to get into. &nbsp;My suggestion for those applying to any of the programs is to learn the basics of ruby before applying. This will show that you are passionate about programming, and will help you get through any technical tests. &nbsp; My other suggestion is to not freak out about the technical tests; just talk your way through it. &nbsp;It is okay to make mistakes.</p>
-
-
-<p>This site has been mainly documenting my journey of learning on my own. I feel that the &#8220;bootcamp&#8221; model that is rapidly expanding is right <em>for me</em> for the following reasons.&nbsp;</p>
-
-
-<ul>
-<li>Accelerating and focusing learning</li>
-<li>Gaining experience with the soft skills of development</li>
-<li>To gain credibility when applying for junior developer jobs.</li>
-</ul>
-
-
-<p>Furthermore, App Academy in SF seems like the perfect choice for me.</p>
-
-
-<ul>
-<li>Location. &nbsp; San Francisco is the heart of the tech industry, and living and learning in SF will be key to getting an entry level job.</li>
-<li>Business model. &nbsp; App Academy collects tuition as a percentage of your first year&#8217;s salary. &nbsp; The majority of&nbsp;tuition&nbsp;is due after, is comparable to other developer bootcamps, and is only due if they succeed in teaching you. &nbsp;This is&nbsp;immensely&nbsp;more&nbsp;affordable&nbsp;than paying $7-12+k before attending the first day.</li>
-<li>Business model. &nbsp;App Academy&#8217;s business model shows their commitment to&nbsp;<em>each&nbsp;</em>individual student&#8217;s success.</li>
-<li>One cohort at a time. &nbsp;It seems the cycles do not overlap, leading to the focus being your class&#8217; progress as a whole. &nbsp;Dev Bootcamp, on the other hand, often has at least three cohorts running at once.</li>
-</ul>
-
-
-<p><span>This upcoming journey is very exciting, but also pretty terrifying. &nbsp;Not only am I pursuing a different career, but I also will be uprooting myself from my life in DC, where I have lived for over 7 years. &nbsp;&nbsp;</span></p>
-
-
-<p><span>With that said, this blog will continue to show how I am learning web development on my own until September. &nbsp; Once App Academy begins, it will chronicle my journey there.&nbsp;</span></p>
-
-
-<p>I&#8217;d like to recommend RubyMonk as a great starting point for learning Ruby. &nbsp;It is a great introduction to the language. &nbsp; In my opinion, it&#8217;s much more effective than codecademy. &nbsp;Moreover, the problems they have are top notch and force you to think.&nbsp;</p>
-
-
-<p><span>Log for 4/10 - 4/21</span></p>
-
-
-<ul>
-<li>PeepCode - Episode 83, Play by Play with Ben Orenstein</li>
-<li>RubyMonk Primer (Complete except a handful of problems)</li>
-<li>Thoughtbot&#8217;s Intermediate Ruby on Rails course - Part 3</li>
-<li>Agile Development with Heroku webinar</li>
-</ul>
 
 ]]></content>
   </entry>
