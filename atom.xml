@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-14T18:23:43-04:00</updated>
+  <updated>2013-06-15T21:10:38-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Nation, Day II]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/15/rubynation-day-ii/"/>
+    <updated>2013-06-15T12:21:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/15/rubynation-day-ii</id>
+    <content type="html"><![CDATA[<p>Kerri Miller spoke about measurement tools. Slides <a href="https://speakerdeck.com/kerrizor/you-cant-miss-what-you-cant-measure">here</a>. An interesting tool is <a href="http://ruby.sadi.st/Ruby_Sadist.html">flog</a> which grades you based on code complexity. Aside from code complexity, another metric to keep an eye out on is churn.  Churn, from what I understand, is the amount of times you edit a file.  If you keep on editing a file throughout a project&rsquo;s lifespan, you may not have a firm understanding on what that model/class/method should be doing.</p>
+
+<p>Rich Kilmer spoke about Ruby Motion and Bluetooth 4 integration in Ruby Motion. Ruby Motion definitely seems 1.) capable and 2.) an emerging technology with an active community.  I definitely want to start writing some programs in it.  The second half of his talk was about Bluetooth 4:  BT4 is really a cool technology with a lot of cool potential.  We will start seeing more electronics and gadgets incorporating it, especially since iOS 7 is embracing more of the advanced capabilities of it.</p>
+
+<p>Jim Gay spoke about DCI; this may have been one of the only talks that really went over my head.  DCI stands for Data-Context-Interaction.  On paper, I understand the basics of DCI.  I&rsquo;m just unsure of how to implement it in web development, and even if I should be worrying about that as a beginner.</p>
+
+<p>Evan Light spoke, somewhat pessimistically, about the state of ruby and ROR.  He compared Rails&#8217; current state to where Java was leading up to the moment when people started leaving java for ruby. He spoke about how complex things are becoming and how the community seems to be making some dangerous choices on what gems and technologies are adopted.  Overall, it was pretty interesting; it was clear he really loves ruby and doesn&rsquo;t want it to see the same fate as java.</p>
+
+<p>John Athayde spoke about design patterns.  I enjoyed his talk a lot.  He has an interesting background; he comes from, among other things, a career as an architect.  Developers, for good reasons, like to think of themselves as craftsman and engineers.  His talk focused on architectural theory that could be applied to development. Mainly, in architecture, there are common patterns (like in programming).  These patterns are not a template though, they are an answer to a problem. He also stressed that beginners should focus on code anti-patterns (code smells) rather than code patterns.  Otherwise, beginners will jump straight to copying a pattern when they might not.</p>
+
+<p>A lot of the lightning talks were really well done.  One that sticks out was an introduction to devops. Basically, the speaker said that many people use the word wrong.  Devops is a culture of getting developers and system operators to work together and improve the final product.</p>
+
+<p>Steve Klabnik spoke about taking over maintenance of an open source project under the worst conditions.  It was a good talk, but one thing I particularly enjoyed that he said was <em>getting</em> involved in an open source project as a beginner is not easy.  Many current developers that do open source work say that it is, but there are still barriers to knowing where to begin with it.  Moreover, he also spoke about the negative side of the open source community ~ high demands.  Many people expect your programming to be perfect, but 1.) they aren&rsquo;t committing to it and 2.) You aren&rsquo;t getting paid to do it.</p>
+
+<p>Avdi Grimm ended RubyNation with an awesome talk on code and joy.  Two things that he talked about were 1.) the community and 2.) pair programming.  The ruby community is amazing.  My experience with this conference, and with all the resources online, really convinced me that there aren&rsquo;t many programming communities out there like this, let alone regular communities.  I felt so comfortable just going up to random strangers and introducing myself in a way that I have never before.</p>
+
+<p>I am so thankful for the people organizing RubyNation; it was a great conference with well selected and engaging speakers.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby Nation, Day I]]></title>
@@ -852,15 +877,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <li>Agile Development with Heroku webinar</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Older posts..]]></title>
-    <link href="http://djquan.github.io/blog/2013/04/12/older-posts/"/>
-    <updated>2013-04-12T16:17:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/04/12/older-posts</id>
-    <content type="html"><![CDATA[<p>Older posts can be found at <a href="http://dan-quan.tumblr.com">dan-quan.tumblr.com</a></p>
 ]]></content>
   </entry>
   
