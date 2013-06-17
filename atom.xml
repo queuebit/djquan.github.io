@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-16T16:34:53-04:00</updated>
+  <updated>2013-06-17T19:56:27-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[User models * 2]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/17/user-models-star-2/"/>
+    <updated>2013-06-17T17:57:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/17/user-models-star-2</id>
+    <content type="html"><![CDATA[<p>As I mentioned in my previous post, I decided to go with devise over building my own authentication system.  I thought I would elaborate on that choice a little. In other tutorials, I have done my own authentication from scratch.  It is often preferable because most of the authentication gems go way overboard on the features and the routes.</p>
+
+<p>I recognize those arguments, and I chose devise for a few reasons.  First, features are nice. The site will be a reflection of my skills to potential clients and HR representatives&hellip;and I&rsquo;m sure many of them would be more impressed by features than rolling your own authentication system from scratch.  Second, speed.  I&rsquo;m giving myself a week to push something to the web, and devise gives you a lot for a small amount of time.  Third, and probably the biggest factor, was that I am implementing two authentication systems: one for general users (bakers) and one for organizations.  Each one will have different logic associated with it (i.e, organizations will have events).</p>
+
+<p>Today I worked more on my user model, adding a city and profile to it and the views.  I also added my second model, the organizations, along with authentication for that as well.  I worked a bit on the design.  For a deeper understanding, check out my <a href="https://github.com/djquan/bake_sale/commits">commit history</a>.  I&rsquo;m trying to follow good git practices like committing constantly and working on a separate feature branch. Good habits are formed early.</p>
+
+<p>Code Climate is pretty neat, and free for open source.  It doesn&rsquo;t hurt to put a project up and keep an eye out on the statistics it gives about your code.  Also, I recommend checking out simplecov.  It lets you know what percent your test coverage is, and even generates a nice little html report on it too.</p>
+
+<p>I think what&rsquo;s next is: events, which will belong to organizations with a has many relationship. It should be pretty simple.  It&rsquo;ll get more complicated with it&rsquo;s relationship to bakers model, who should be able to sign up for an event.  So a baker will have many events too.</p>
+
+<p>Random thought: One of the speakers at RubyNation was a contributor to RubyGems. He made a comment about this feature that many people in the room used, and how he wrote that completely drunk.</p>
+
+<p>Random vim newbie lesson.  So, today I realized I wanted to add a generic div to most of my html files.  This div would be a wrapper, and allow me to set padding on the body of most of my pages.</p>
+
+<p>Initially, I had started off with a generic div in my application.html.erb file like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">  &lt;div class=&quot;main-container&quot;&gt; </span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">render</span> <span class="s1">&#39;layouts/alerts&#39;</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  &lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This was great, but I needed the option of adjusting the padding specifically for my main page, as I didn&rsquo;t want certain elements to have any padding at all. I&rsquo;m still unsure of if there was an easier way to do it using advanced CSS skills, but I was left with the issue of adding a div to around 10 different html files.</p>
+
+<p>This kind of repetition is where vim excels though, through it&rsquo;s powerful macros.  Here is how I accomplished it.</p>
+
+<ul>
+<li>qa &ndash; starts recording a macro at register a</li>
+<li>gg &ndash; normalizes the position at the first line</li>
+<li>O &ndash; creates a new line above the cursor (so, the first line)</li>
+<li>&lt;div class=&ldquo;wrapper&rdquo;>[enter] &ndash; just creating the div</li>
+<li>jVG &ndash; moves down one line, enters visual block mode and selects to the last line of the file</li>
+<li>> &ndash; indents everything selected once</li>
+<li>Go &ndash; moves cursor to last line and adds a new line</li>
+<li>&lt;/div>[enter] &ndash; finishes the div</li>
+<li>q  &ndash; quits recording</li>
+</ul>
+
+
+<p>This may look a little complicated, but it really wasn&rsquo;t at all. Applying that change to any file was as simple as typing @a.  There are even easier ways to apply the macro to a longer list of files using :argdo, but I wanted to eyeball it. For a deeper look at macros, check out Practical Vim. It definitely saved me a lot of time in this particular instance.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building]]></title>
@@ -832,34 +885,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <ul><li>Started Test-First-Ruby</li>
 <li><a href="https://tutsplus.com/course/improve-workflow-in-sublime-text-2/">Tuts+ tutorial</a> on setting up a good ST2 workflow</li>
 <li>Spent a lot of time trying to get an efficient workflow&#8230;went back and forth between vim and ST2 a lot.  I&#8217;m working on posting <a href="https://trello.com/board/my-setup/5181b0017dca609775002b0d">my current setup </a>with both on trello.  </li>
-</ul></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Thoughtbot - Intermediate]]></title>
-    <link href="http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate/"/>
-    <updated>2013-04-29T16:16:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/04/29/thoughtbot-intermediate</id>
-    <content type="html"><![CDATA[<p><p><span>I finished Thoughtbot&#8217;s Intermediate Ruby on Rails Workshop.  I, without a doubt, learned a lot from it.  I</span><span>t works out to being $100 with a Learn Prime subscription.   For that price, you get the material (approximately four hours of video), and constant access to the instructor and office hours every week.  I&#8217;d recommend this workshop for this access more than the content (which was quite good too).   I&#8217;m going to be their taking online Test Driven Rails Workshop in May. </span></p>
-<p>The Well Grounded Rubyist is an amazing book.  I have a much better understanding of Ruby after reading it.   The first half of the book really prepares you for the second, and it goes from good to amazing in Chapter 10: Enumerables.   It is a long book, but I highly recommend taking a look as it greatly enhanced my comprehension (and love) of Ruby.  </p>
-<ul><li><span>Learning more about regular expressions and MatchData has definitely made them less scary(and kind of exciting!).  </span></li>
-<li><span>Learning more about the enumerable module gives me a better picture of when to use each method.   Also, knowing that anything can be made to be enumerable-like by adding one method (and an include) is exciting. </span></li>
-</ul><p><span>I&#8217;m playing around with zsh (and oh-my-zsh), and I really like it so far.  Tons of great functionality right from installing it.</span></p>
-<p>I also started playing around with vim; I&#8217;m not as sure about that, but it&#8217;s getting more appealing the more I learn.  I figure, even if I don&#8217;t end up using it as my full-time text editor (ST2 is so shiny), it&#8217;s still good to have a grasp of it.  Although as I&#8217;m writing this, <a href="http://xkcd.com/1205/">xkcd&#8217;s newest comic</a> asks how long can you work on making a routine task more efficient before you&#8217;re spending more time than you save.</p>
-<p>Project Euler gives language agnostic coding challenges requiring you to create code to help you set up a math problem.  For example, find all the sum of the even Fibonacci numbers up to four million.  They&#8217;re great exercises to work through to help improve basic programming.  </p>
-<p><a href="http://news.yahoo.com/blogs/this-could-be-big-abc-news/back-school-job-150849131.html?vp=1">A new article (and video) on App Academy.</a></p>
-<p>Log for 4/22 - 4/29</p>
-<ul><li>Finished Thoughtbot&#8217;s Intermediate Ruby on Rails Workshop</li>
-<li>Introduction to Thoughbot&#8217;s Test Driven Rails</li>
-<li>Finished Well Grounded Rubyist</li>
-<li>vimtutor</li>
-<li>PeepCode -  Episode 46, Smash into Vim I</li>
-<li>PeepCode -  Episode 47, Smash into Vim II</li>
-<li>Thoughtbot - Vim for Rails Developers</li>
-<li>Started vimadventures</li>
-<li>Started with Project Euler</li>
 </ul></p>
 
 ]]></content>

@@ -7,7 +7,7 @@
 	<meta name="author" content="Daniel Quan">
 
 	
-	<meta name="description" content="Jun 16th, 2013 Building I&rsquo;ve started to try and build an MVP (minimum viable product). I&rsquo;m giving myself a week to make and push a fully &hellip;">
+	<meta name="description" content="Jun 17th, 2013 User Models * 2 As I mentioned in my previous post, I decided to go with devise over building my own authentication system. I thought &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,81 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-17T17:57:00-04:00" data-updated="true" itemprop="datePublished">Jun 17<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013/06/17/user-models-star-2/" itemprop="url">User Models * 2</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>As I mentioned in my previous post, I decided to go with devise over building my own authentication system.  I thought I would elaborate on that choice a little. In other tutorials, I have done my own authentication from scratch.  It is often preferable because most of the authentication gems go way overboard on the features and the routes.</p>
+
+<p>I recognize those arguments, and I chose devise for a few reasons.  First, features are nice. The site will be a reflection of my skills to potential clients and HR representatives&hellip;and I&rsquo;m sure many of them would be more impressed by features than rolling your own authentication system from scratch.  Second, speed.  I&rsquo;m giving myself a week to push something to the web, and devise gives you a lot for a small amount of time.  Third, and probably the biggest factor, was that I am implementing two authentication systems: one for general users (bakers) and one for organizations.  Each one will have different logic associated with it (i.e, organizations will have events).</p>
+
+<p>Today I worked more on my user model, adding a city and profile to it and the views.  I also added my second model, the organizations, along with authentication for that as well.  I worked a bit on the design.  For a deeper understanding, check out my <a href="https://github.com/djquan/bake_sale/commits">commit history</a>.  I&rsquo;m trying to follow good git practices like committing constantly and working on a separate feature branch. Good habits are formed early.</p>
+
+<p>Code Climate is pretty neat, and free for open source.  It doesn&rsquo;t hurt to put a project up and keep an eye out on the statistics it gives about your code.  Also, I recommend checking out simplecov.  It lets you know what percent your test coverage is, and even generates a nice little html report on it too.</p>
+
+<p>I think what&rsquo;s next is: events, which will belong to organizations with a has many relationship. It should be pretty simple.  It&rsquo;ll get more complicated with it&rsquo;s relationship to bakers model, who should be able to sign up for an event.  So a baker will have many events too.</p>
+
+<p>Random thought: One of the speakers at RubyNation was a contributor to RubyGems. He made a comment about this feature that many people in the room used, and how he wrote that completely drunk.</p>
+
+<p>Random vim newbie lesson.  So, today I realized I wanted to add a generic div to most of my html files.  This div would be a wrapper, and allow me to set padding on the body of most of my pages.</p>
+
+<p>Initially, I had started off with a generic div in my application.html.erb file like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='erb'><span class='line'><span class="x">  &lt;div class=&quot;main-container&quot;&gt; </span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="n">render</span> <span class="s1">&#39;layouts/alerts&#39;</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">    </span><span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="cp">%&gt;</span><span class="x"></span>
+</span><span class='line'><span class="x">  &lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This was great, but I needed the option of adjusting the padding specifically for my main page, as I didn&rsquo;t want certain elements to have any padding at all. I&rsquo;m still unsure of if there was an easier way to do it using advanced CSS skills, but I was left with the issue of adding a div to around 10 different html files.</p>
+
+<p>This kind of repetition is where vim excels though, through it&rsquo;s powerful macros.  Here is how I accomplished it.</p>
+
+<ul>
+<li>qa &ndash; starts recording a macro at register a</li>
+<li>gg &ndash; normalizes the position at the first line</li>
+<li>O &ndash; creates a new line above the cursor (so, the first line)</li>
+<li>&lt;div class=&ldquo;wrapper&rdquo;>[enter] &ndash; just creating the div</li>
+<li>jVG &ndash; moves down one line, enters visual block mode and selects to the last line of the file</li>
+<li>> &ndash; indents everything selected once</li>
+<li>Go &ndash; moves cursor to last line and adds a new line</li>
+<li>&lt;/div>[enter] &ndash; finishes the div</li>
+<li>q  &ndash; quits recording</li>
+</ul>
+
+
+<p>This may look a little complicated, but it really wasn&rsquo;t at all. Applying that change to any file was as simple as typing @a.  There are even easier ways to apply the macro to a longer list of files using :argdo, but I wanted to eyeball it. For a deeper look at macros, check out Practical Vim. It definitely saved me a lot of time in this particular instance.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -808,59 +883,6 @@ Zencoding/Emmet is a way of expanding short bits of code into longform html. Def
 <li>Code School &ndash; Real Time Web with Node.js</li>
 <li>Thoughtbot &ndash; Test Driven Rails, Interacting with 3rd Party Services</li>
 <li>Code School &ndash; Discover Dev Tools</li>
-</ul>
-
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-22T17:47:00-04:00" data-updated="true" itemprop="datePublished">May 22<span>nd</span>, 2013</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/coffeescript/'>CoffeeScript</a>, <a class='category' href='/blog/categories/javascript/'>Javascript</a>, <a class='category' href='/blog/categories/rubynation/'>RubyNation</a>, <a class='category' href='/blog/categories/vim/'>vim</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/22/progress/" itemprop="url">Progress</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>The RubyNation <a href="http://www.rubynation.org/schedule">Speaker List</a> looks amazing. Sandi Metz, Avdi Grimm, Russ Olsen, Steve Klabnik&hellip;I&rsquo;m definitely excited about it.</p>
-
-<p>CoffeScript is a language that compiles into javascript.  The Code School course on CoffeeScript was a nice introduction to it, and it was also a good refresher on basic javascript.  The course has a lot of examples of translating from javascript and jquery into pure coffeescript, which I found really helpful.</p>
-
-<p>There is a lot <a href="http://wekeroad.com/2012/03/21/coffeescript-or-straight-up-js-i-suck-either-way/">written</a> about the pros and cons of CoffeeScript weighed against pure JavaScript. I do like that CoffeeScript appears to be more similar in syntax to Ruby. I don&rsquo;t look it as a JavaScript vs CoffeeScript choice.  To write well in CoffeeScript, you need to have a firm understanding of basic JavaScript to debug errors and really understand what&rsquo;s going on.</p>
-
-<p>Recently, I&rsquo;ve done a fair amount of coding(and blogging) using vim exclusively, and I&rsquo;ve been thrilled with how it&rsquo;s going.  I&rsquo;ve improved my efficiency by not having to switch windows to perform tests, rake tasks, or any other command line work.  Moreover, being able to work quickly without using the mouse at all is liberating.</p>
-
-<p>I&rsquo;m still reading through <a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a>, and it&rsquo;s been a great resource so far. I still need to learn more about registers (vim&rsquo;s tools to copy and paste).  I also still need to find a snippet(ways of expanding text) solution that works well for me.  Still, I can&rsquo;t see myself moving away from vim+tmux anytime soon.</p>
-
-<p>Log for 5/20 &ndash; 5/22</p>
-
-<ul>
-<li>Finished the Jumpstart Labs EventManager Tutorial</li>
-<li>Thoughtbot &ndash; Test Driven Rails, Writing Unit Tests</li>
-<li>Code School &ndash; Anatomy of Backbone.js Part 2</li>
-<li>Code School &ndash; CoffeeScript</li>
 </ul>
 
 
