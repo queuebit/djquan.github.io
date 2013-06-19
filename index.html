@@ -7,7 +7,7 @@
 	<meta name="author" content="Daniel Quan">
 
 	
-	<meta name="description" content="Jun 17th, 2013 User Models * 2 As I mentioned in my previous post, I decided to go with devise over building my own authentication system. I thought &hellip;">
+	<meta name="description" content="Jun 18th, 2013 Belongs To Today was spent mostly working on my actual bake sale event class. It definitely took longer than I had expected, and I& &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,59 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-18T20:42:00-04:00" data-updated="true" itemprop="datePublished">Jun 18<span>th</span>, 2013</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2013/06/18/belongs-to/" itemprop="url">Belongs To</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Today was spent mostly working on my actual bake sale event class. It definitely took longer than I had expected, and I&rsquo;m only mostly done.</p>
+
+<p>Russ Olsen, at RubyNation, was talking about how programming and web development is a profession where progress is not made linearly. It&rsquo;s based on problem solving and &ldquo;A-ha!&rdquo; moments. To paraphrase:  A lot of the time, it&rsquo;s not you work for X hours and you get Y done.</p>
+
+<p>Some issues I ran into today include dealing with strong parameters for a model that &ldquo;belongs to&rdquo; a devise model and dealing with form helpers for nested attributes. Up till now, form helpers just worked and I didn&rsquo;t really need to understand how they worked (a lot of rails can be like that).  But, when you deviate from normal convention a little, you really begin to understand them better as you work through issues you are having.</p>
+
+<p>Another mention for code-climate.  Having it follow an open source github repo <a href="https://codeclimate.com/github/signup">is easy</a>. It&rsquo;ll then create a site that you can refresh at will.  The statistics are nice, and I just noticed that they were pointing to a code smell of mine: the dreaded code duplication.  The link is <a href="https://codeclimate.com/github/djquan/bake_sale/smells">here</a>, but hopefully I&rsquo;ll have time to fix it soon. My duplication is that my organization and user model check the same validation on usernames.  Not horrible, but I&rsquo;m sure there&rsquo;s a way to extract it to a helper.</p>
+
+<p>Check out Rails-ERD(Entity-Relationship Diagrams). It&rsquo;s really easy to <a href="http://rails-erd.rubyforge.org/install.html">install</a>.  Basically, it automatically creates diagrams based on the models you have and their relationships. It&rsquo;s a nice way to see relationships.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6565481/erd.png" alt="Simple right now.." /></p>
+
+<p>So right now it&rsquo;s my app is fairly simple (and look how much stuff devise adds..), but it should start to have some more advanced logic soon.</p>
+
+<p>Tomorrow will be a somewhat lighter day; I&rsquo;ll finish up the event class.  So that&rsquo;ll include the date/time logic and forms for inputing that. I might also look into Spring to speed up tests.</p>
+
+<p>I also started the <a href="https://www.coursera.org/course/startup">Startup Engineering class by Stanford at Coursea</a>.  So far, it&rsquo;s pretty interesting &ndash; it does focus on javascript skills which is a nice benefit.  It&rsquo;s good to learn multiple frameworks and languages.</p>
+
+<p>Also, thanks queuebit for the pull request.  I had a broken link, and queubit graciously sent a pull request to fix it.  A nice use of a PR as my entire blog site, including content, is on github.</p>
+
+<p>Random vim newbie lesson.  :set spell</p>
+
+<p>I do all my blog writing in vim. When I&rsquo;m somewhat finished writing, I&rsquo;ll enter the above command and see spelling errors underlined. Definitely not the most revolutionary idea, but it&rsquo;s worth a mention.  I don&rsquo;t use it enough to warrant make and memorize a key binding though.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -822,69 +875,6 @@ Zencoding/Emmet is a way of expanding short bits of code into longform html. Def
 <p>.         ~  Appends a semicolon to every line selected.</p>
 
 <p>No idea why this doesn&rsquo;t work out of the box for vim.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-25T21:47:00-04:00" data-updated="true" itemprop="datePublished">May 25<span>th</span>, 2013</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/learn-prime/'>learn prime</a>, <a class='category' href='/blog/categories/node-dot-js/'>node.js</a>, <a class='category' href='/blog/categories/thoughtbot/'>thoughtbot</a>, <a class='category' href='/blog/categories/vim/'>vim</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2013/05/25/updates/" itemprop="url">Node.js and More</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>This will probably be my last update for about a week.  I&rsquo;m driving cross country on monday, so I won&rsquo;t have too much time to update the blog.  I do plan on learning more through various audio podcasts during the drive.  Some of them include:</p>
-
-<ul>
-<li>The Changelog</li>
-<li>RubyRogues</li>
-<li>Giant Robots Smashing into Other Giant Robots</li>
-<li>Ruby Freelancers</li>
-<li>Javascript Jabber</li>
-</ul>
-
-
-<p>Feel free to post suggestions in the comments section. Learning to program is inherently visual and tactile, but there must be some other good audio only resources out there.  It is too bad there aren&rsquo;t many audio versions of technical books.</p>
-
-<p>I&rsquo;ve written a bit on Thoughtbot&rsquo;s Learn Prime.  This week, they had a pretty awesome &ldquo;Ask Me Anything&rdquo; session with Ben Orenstein. More features like this would definitely make Learn Prime appealing after I have finished all of their workshops.</p>
-
-<p>I&rsquo;ve signed up for an online <a href="http://vimcasts.org/classes/core-vim">vim seminar</a> on June 3rd that should raise my vim skills to the next level. I&rsquo;ll be sure to post my thoughts on that.</p>
-
-<p>Web development is much more than knowing how to write a Ruby on Rails app.  Learning javascript well is becoming a major priority for me.  Javascript isn&rsquo;t the prettiest language, but a lot of the exciting frameworks (backbone, ember, node, angular) rely on it.</p>
-
-<p>Node.js is a server-side system of responding to events quickly and reliably. I definitely recommend the Code School course on it.  It was one of the more challenging courses, and I learned more because of that.</p>
-
-<p>Log for 5/23 &ndash; 5/25</p>
-
-<ul>
-<li>Code School &ndash; Real Time Web with Node.js</li>
-<li>Thoughtbot &ndash; Test Driven Rails, Interacting with 3rd Party Services</li>
-<li>Code School &ndash; Discover Dev Tools</li>
-</ul>
-
 
 		
 		

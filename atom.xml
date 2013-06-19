@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-18T12:59:26-04:00</updated>
+  <updated>2013-06-18T23:05:05-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Belongs To]]></title>
+    <link href="http://djquan.github.io/blog/2013/06/18/belongs-to/"/>
+    <updated>2013-06-18T20:42:00-04:00</updated>
+    <id>http://djquan.github.io/blog/2013/06/18/belongs-to</id>
+    <content type="html"><![CDATA[<p>Today was spent mostly working on my actual bake sale event class. It definitely took longer than I had expected, and I&rsquo;m only mostly done.</p>
+
+<p>Russ Olsen, at RubyNation, was talking about how programming and web development is a profession where progress is not made linearly. It&rsquo;s based on problem solving and &ldquo;A-ha!&rdquo; moments. To paraphrase:  A lot of the time, it&rsquo;s not you work for X hours and you get Y done.</p>
+
+<p>Some issues I ran into today include dealing with strong parameters for a model that &ldquo;belongs to&rdquo; a devise model and dealing with form helpers for nested attributes. Up till now, form helpers just worked and I didn&rsquo;t really need to understand how they worked (a lot of rails can be like that).  But, when you deviate from normal convention a little, you really begin to understand them better as you work through issues you are having.</p>
+
+<p>Another mention for code-climate.  Having it follow an open source github repo <a href="https://codeclimate.com/github/signup">is easy</a>. It&rsquo;ll then create a site that you can refresh at will.  The statistics are nice, and I just noticed that they were pointing to a code smell of mine: the dreaded code duplication.  The link is <a href="https://codeclimate.com/github/djquan/bake_sale/smells">here</a>, but hopefully I&rsquo;ll have time to fix it soon. My duplication is that my organization and user model check the same validation on usernames.  Not horrible, but I&rsquo;m sure there&rsquo;s a way to extract it to a helper.</p>
+
+<p>Check out Rails-ERD(Entity-Relationship Diagrams). It&rsquo;s really easy to <a href="http://rails-erd.rubyforge.org/install.html">install</a>.  Basically, it automatically creates diagrams based on the models you have and their relationships. It&rsquo;s a nice way to see relationships.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/6565481/erd.png" alt="Simple right now.." /></p>
+
+<p>So right now it&rsquo;s my app is fairly simple (and look how much stuff devise adds..), but it should start to have some more advanced logic soon.</p>
+
+<p>Tomorrow will be a somewhat lighter day; I&rsquo;ll finish up the event class.  So that&rsquo;ll include the date/time logic and forms for inputing that. I might also look into Spring to speed up tests.</p>
+
+<p>I also started the <a href="https://www.coursera.org/course/startup">Startup Engineering class by Stanford at Coursea</a>.  So far, it&rsquo;s pretty interesting &ndash; it does focus on javascript skills which is a nice benefit.  It&rsquo;s good to learn multiple frameworks and languages.</p>
+
+<p>Also, thanks queuebit for the pull request.  I had a broken link, and queubit graciously sent a pull request to fix it.  A nice use of a PR as my entire blog site, including content, is on github.</p>
+
+<p>Random vim newbie lesson.  :set spell</p>
+
+<p>I do all my blog writing in vim. When I&rsquo;m somewhat finished writing, I&rsquo;ll enter the above command and see spelling errors underlined. Definitely not the most revolutionary idea, but it&rsquo;s worth a mention.  I don&rsquo;t use it enough to warrant make and memorize a key binding though.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[User models * 2]]></title>
@@ -866,25 +897,6 @@ but have run into issues.  I&rsquo;ll keep playing around with it though!</p>
 <p>Log for 5/2 - 5/7</p>
 <ul><li>Ruby Tapas - #1 - 10</li>
 <li>Completed Test First Ruby</li>
-</ul></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Efficiency]]></title>
-    <link href="http://djquan.github.io/blog/2013/05/01/efficiency/"/>
-    <updated>2013-05-01T16:14:00-04:00</updated>
-    <id>http://djquan.github.io/blog/2013/05/01/efficiency</id>
-    <content type="html"><![CDATA[<p><p><span>A major lesson I&#8217;ve learned from experimenting with vim is that efficiency does matter, no matter the editor.  The tools a person chooses are important, and it&#8217;s important to be efficient and precise with them.  </span></p>
-<p>In vimadventures, they have these levels where you have to accomplish certain editing and navigating texts within a certain number of keystrokes. The goal is to make you think about it now, so that it can be engrained later.  </p>
-<p>I&#8217;m still up in the air about making it my primary editor, but it has changed the way I approach Sublime Text.  I&#8217;m constantly asking, is there a way I can do <em>x </em>without reaching for the mouse and without pressing too many keys.   To rephrase an earlier statement, the tools a person chooses are important, but it&#8217;s more important to be efficient and precise with them than choosing the perfect one. </p>
-<p>This <a href="https://www.hackerschool.com/manual">manual</a> by hacker school is pretty awesome.  The parts on social rules and pair programming are worth a gander.</p>
-<p>Toying around with moving the &#8220;Curriculum&#8221; session <a href="https://trello.com/b/NApK9yRl">to a Trello board</a>.  It&#8217;s easier to maintain, allows any trello user to comment, and will help me get used to trello.</p>
-<p>Log for 4/30 - 5/1</p>
-<ul><li>Started Test-First-Ruby</li>
-<li><a href="https://tutsplus.com/course/improve-workflow-in-sublime-text-2/">Tuts+ tutorial</a> on setting up a good ST2 workflow</li>
-<li>Spent a lot of time trying to get an efficient workflow&#8230;went back and forth between vim and ST2 a lot.  I&#8217;m working on posting <a href="https://trello.com/board/my-setup/5181b0017dca609775002b0d">my current setup </a>with both on trello.  </li>
 </ul></p>
 
 ]]></content>
