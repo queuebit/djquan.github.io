@@ -4,7 +4,7 @@
   <title><![CDATA[Daniel Quan]]></title>
   <link href="http://djquan.github.io/atom.xml" rel="self"/>
   <link href="http://djquan.github.io/"/>
-  <updated>2013-06-18T23:05:05-04:00</updated>
+  <updated>2013-06-18T23:20:48-04:00</updated>
   <id>http://djquan.github.io/</id>
   <author>
     <name><![CDATA[Daniel Quan]]></name>
@@ -38,7 +38,7 @@
 
 <p>Also, thanks queuebit for the pull request.  I had a broken link, and queubit graciously sent a pull request to fix it.  A nice use of a PR as my entire blog site, including content, is on github.</p>
 
-<p>Random vim newbie lesson.  :set spell</p>
+<p>Random vim newbie lesson.  :set spell (from the command mode, only when you need it)</p>
 
 <p>I do all my blog writing in vim. When I&rsquo;m somewhat finished writing, I&rsquo;ll enter the above command and see spelling errors underlined. Definitely not the most revolutionary idea, but it&rsquo;s worth a mention.  I don&rsquo;t use it enough to warrant make and memorize a key binding though.</p>
 ]]></content>
